@@ -1,2 +1,3 @@
 # Web_Dev_HW
-files and homeworks for web dev class
+
+Assignments from Introduction to Web Development class
