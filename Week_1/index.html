@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello HTML</title>
+	<!-- the title tag is required and shows up as the main text in a search result and as the title on our browser tab -->
+	<!-- command+alt+slash = writing comments -->
+    <!-- charset attribute specifies the character encoding of the page: character encoding tag to have the fonts working -->
+    <meta charset="UTF-8">
+    <!-- these are optional metadata tags that help with SEO and search engine result rendering -->
+    <meta name="description" content = "this is a sample description. I will show up under the big title link in a search result">
+    <meta name="keywords" content="HTML, CSS, tutorial">
+    <meta name="author" content="Some Company">
+    <!-- We can also link to our css files and javascript files in the head of our document. More on that when we start CSS next week! -->
+</head>
+
+<body>
+<p>This is a paragraph with some basic markup within it. <em>This is a paragraph with some basic markup within it. This is a paragraph with some basic markup within it.</em> This is a paragraph with some basic markup within it. This is a <strong>paragraph</strong> with some basic markup within it. This is a paragraph with some basic markup within it. This is a paragraph with some basic markup within it. This is a paragraph with some basic markup within it. </p>
+
+<!-- emphasis tag makes everything italic = <em></em> -->
+
+<p>This is a paragraph with some line breaks in it. <br><br> Use with caution, never use tags to change the presentation, there should be a semantic reason for using them.</p>
+<!-- br = one is a break, two br br will start a new paragraph -->
+<h1>This is an H1 heading</h1>
+<h2>This is an H2 heading</h2>
+<h3>This is an H3 heading</h3>
+<h4>This is an H4 heading</h4>
+<h5>This is an H5 heading</h5>
+<h6>This is an H6 heading</h6>
+
+<!-- press command in order to get multiple cursors -->
+
+<p>This is a parahraph with <small>some small text.</small></p>
+<p>This is a parahraph with <big>some big text.</big></p>
+
+<!-- Orderd Lists render with an order.  The order can be specified as numerical by defualt, we can change the list style type with css soon -->
+<hr>
+
+<!-- hr = horizontal rule -->
+ <ol>
+    <li>Item 1</li>
+	<li>Item 2</li>
+	<li>Item 3</li>
+ </ol>
+
+<!-- Unordered list render in order but the order is less important semantically. They render as a bulleted list by default -->
+
+<ul>
+   <li>Pigeons</li>
+   <li>Umbrellas</li>
+   <li>Dog Poop</li>
+</ul>
+
+<!-- We can also nest lists -->
+
+<ul>
+   <li>Pigeons 
+     <ul>
+     <li>Passenger</li>
+     <li>Messenger</li>
+     <li>Carrier</li>
+     </ul>
+
+   </li>
+   <li>Umbrellas</li>
+   <li>Dog Poop</li>
+</ul>
+
+
+<p>This is a paragraph with a link to <a style="color: red;" href="https://www.google.com/">Google</a> in it. This is an external link. External link requires an absolute URL. This means the full website address. </p>
+
+<!-- Never use in-line styles in production -->
+
+<p>This is a paragraph with a link to <a href="about.html"> another page </a> or file on this server/site. These are internal links. Internal links can be relative URLS. </p> 
+
+<!-- We can also link to IDed elements or sections of our page -->
+
+<a href="#"> Back to Top</a>
+
+
+<hr id="bottom">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/220px-Hausziege_04.jpg" alt="Goat on a Stump" title="Mystic Goat" width="500px" >
+
+<!-- Have an alternative text for the image in case the image does not work, helps with search -->
+
+<!-- title is a caption -->
+
+<img src="img/daisy-goat.jpg">
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
