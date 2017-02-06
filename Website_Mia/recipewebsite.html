@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mia's Recipe</title>
+    <!-- Based on the classes we have applied to our container and thumbnail divs, today we will explore how margins, padding, and borders effect the dimensions of our block level elements in both pixel and percentage based grid systems. -->
+    <link rel="stylesheet" type="text/css" href="recipewebsite.css">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="http://ma3669.nyuad.im/">Homepage</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#preparation">Preparation</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    <div class="intro-header">
+        <div class="container">
+            <h1> <a  href="http://www.epicurious.com/recipes/food/views/cioppino-seafood-stew-with-gremolata-toasts-51248830">
+            <div class="thumbnail-border">Cioppino Seafood Stew With Gremolata Toasts</div></h1></a>
+            <br class="clear">
+        </div>
+        <hr>
+        <div id="container">
+            <img src="img/soup.jpg" alt="" />
+        </div>
+        <hr>
+        <h1><a name="ingredients">Ingredients</h1>
+        <div class="container clear-fix">
+            <div class="thumbnail">
+                <ul>
+                    <li>3 garlic cloves, divided</li>
+                    <li>2 tablespoons extra-virgin olive oil</li>
+                    <li>3/4 cup finely chopped onion</li>
+                    <li>1/2 cup packed sliced fennel</li>
+                    <li>1/4 cup finely chopped celery</li>
+                    <li>1 teaspoon kosher salt, divided</li>
+                    <li>1/2 teaspoon freshly ground black pepper, divided</li>
+                    <li>1/2 teaspoon red-pepper flakes</li>
+                    <li>1/2 pound cleaned squid, bodies sliced into 1/2-inch rings, tentacles halved lengthwise if large</li>
+                    <li>1/2 tablespoon tomato paste</li>
+                    <li>1 teaspoon dried oregano</li>
+                    <li>1 cup dry white wine</li>
+                    <li>1 15-ounce can crushed tomatoes</li>
+                    <li>2 bay leaves</li>
+                    <li>1 8-ounce bottle clam juice</li>
+                    <li>1 1/2 cups seafood stock or vegetable broth</li>
+                    <li>1/2 stick (4 tablespoons) unsalted butter, room temperature</li>
+                    <li>3 tablespoons chopped flat-leaf parsley, divided</li>
+                    <li>1/2 teaspoon lemon zest</li>
+                    <li>1 baguette, sliced and toasted</li>
+                    <li>1 pound littleneck clams, soaked in water for 1 hour</li>
+                    <li>1/2 pound medium tail-on shrimp, peeled and deveined</li>
+                    <li>1 pound mussels, scrubbed and de-bearded</li>
+                    <li>1/2 pound skinless flaky white fish such as bass, halibut, hake, or cod, cut into 1-inch pieces</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Good painting is like good cooking; it can be tasted, but not explained.</h2>
+        <h2> Maurice de Vlaminck</h2>
+        <div class="container-fluid clear-fix">
+        </div>
+        <hr>
+        <h1> <a name="preparation">Preparation</h1>
+        <!-- Fixed Container with Fluid Thumbnails Within Notice how our % based thumbnails just figured out thier final dimension based on a fixed container -->
+        <div class="container clear-fix">
+            <div class="thumbnail-fluid">
+                <p>Mince 2 of the garlic cloves. In a large pot over medium heat, heat oil. Add onion, fennel, celery, 1/2 teaspoon salt, and 1/4 teaspoon pepper and cook, stirring occasionally, until softened, 6 to 8 minutes. Add the minced garlic and red-pepper flakes. Continue to cook, stirring constantly, until garlic is golden and fragrant, 1 to 2 minutes more.</p>
+                <p>Reduce heat to medium-low and add squid. Cook, stirring occasionally, until squid is opaque and tender and the released juices reduce, 15 to 20 minutes. Add tomato paste and oregano and cook, stirring, 1 minute.</p>
+                <p>Add wine, raise heat to medium-high, and cook until cooking liquid is reduced by half, 5 to 7 minutes. Add tomatoes with their juice, bay leaves, clam juice, and stock. Bring to a boil, reduce to a simmer, and cook, covered, 30 minutes. Stir in 1/4 teaspoon each salt and pepper. Taste and adjust seasoning.</p>
+                <p>Meanwhile, in a small bowl, mix the butter, 1 tablespoon parsley, lemon zest, and 1/4 teaspoon salt together. Cut remaining garlic clove in half and rub the cut sides on the toasts. Spread the flavored butter on the toasts.</p>
+                <p>When ready to serve, heat the pot to medium and add clams, cover, and cook for 3 minutes. Stir in the shrimp and mussels. Arrange the fish on top of the stew, cover, and simmer until shellfish opens and fish and shrimp are firm and opaque, about 5 minutes more. Discard bay leaves and stir in remaining 2 tablespoons parsley.</p>
+                <p>Serve cioppino immediately in large soup bowls with gremolata toasts alongside.</p>
+            </div>
+        </div>
+        <h2><a  href="http://www.epicurious.com/ingredients/our-best-clam-recipes-steamed-grilled-broth-chowder-gallery">Our Best Clam Recipes</h2></a>
+        <div class="thumbnail-border-padding" id="justified">
+            <img height=150px src="img/clams.jpg" alt="" />
+        </div>
+        <h2><a  href="http://www.epicurious.com/recipes-menus/one-pot-fish-seafood-dinners-friday-recipes-gallery">One Pot Seafood Dinners</h2></a>
+        <div class="thumbnail-border-padding">
+            <img height=150px width=255px src="img/seafood.jpg" alt="" />
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
