@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+	background: url('../img/bg.jpg') no-repeat center center fixed;
+	/* css3 property check for compatibility */
+	background-size: cover;
+}
+
+body {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.container {
+    width: 900px;
+    /*we center it*/
+    margin: 0 auto;
+}
+
+.polaroid {
+    width: 240px;
+    /*we did math on the website*/
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    border: 10px solid cornsilk;
+    border-bottom-width: 45px;
+    /* css 3 properties: be sure to check for prefixes and compatibility */
+    /* box-shadow: x shadow | y shadow | blur | spread | color; */
+    /*chrome and safari older options*/
+    -webkit-box-shadow: 10px 10px 10px 5px rgba(10, 10, 10, 0.5);
+    /*firefox*/
+    -moz-box-shadow: 10px 10px 10px 5px rgba(10, 10, 10, 0.5);
+    /*opera*/
+    -o-box-shadow: 10px 10px 10px 5px rgba(10, 10, 10, 0.5);
+    box-shadow: 10px 10px 10px 5px rgba(10, 10, 10, 0.5);
+}
+
+.polaroid p {
+    position: absolute;
+    text-align: center;
+    width: 260px;
+    bottom: 14px;
+    color: #888;
+}

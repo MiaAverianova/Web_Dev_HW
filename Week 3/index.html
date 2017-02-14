@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inline Block</title>
+    <style type="text/css">
+
+    /*use * to remove all margins and padding  from our elements */
+    *{
+    	margin:0;
+    	padding:0;
+    }
+    /*you cleared all the defaults by using the values of 0*/
+
+    /*use group selectors to apply the same styles to mutiple tags on our page*/
+    main, article{
+    	background-color: rgba(0, 0, 225, 0.2);
+
+    }
+
+    /*without the comma everything is applied to single articles*/
+    main{
+    	width: 900px;
+    	margin: 0 auto;
+    	padding: 10px;
+    }
+/*auto - automatically centered on left and right*/
+
+    article{
+    	width: 300px;
+    	height: 300px;
+    	display: inline-block;
+    	/*fix default extra margin with a negative margin on the right*/
+    	margin-right: -4px;
+    	/*border: the width, the style and then the color */
+    	border: 1px solid blue;
+    	/*do the math: 1 px on the right, one on the left*/
+    	width: 298px;
+    	margin: 0 10px;
+    	width: 275px;
+    }
+
+</style>
+</head>
+
+<body>
+
+
+
+
+
+    <main>
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+    </main>
+</body>
+
+</html>
