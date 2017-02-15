@@ -1,8 +1,50 @@
 body {
-    font-family: 'Quicksand-Light' sans-sherif;
+    font-family: 'Quicksand-Light';
     font-size: 20px;
     color: black;
 }
+
+  <title>NvBar</title>
+  *{
+      margin: 0;
+      padding: 0;
+    }
+
+  
+
+    ul.firstlist{
+      /* remove the bullet points */
+      list-style-type: none;
+      overflow: hidden;
+      background-color: black;
+      border-top:none;
+      
+    }
+
+    li{
+      /* float first and thenwe will switch to inline */
+      /* float: left; */
+      /* use inline */
+      display: inline-block;
+
+    }
+
+    li a{
+      /* anchor tags by default display inline, here we are telling them to behave like a block element. Making the anchor block and adding dimensions padding we get a bigger clickable area for the user to select*/
+      display: block;
+      text-align: center;
+      width: 100px;
+      height: none;
+      padding: 10px;
+      /* remove that ugly underline and color */
+      text-decoration: none;
+    }
+
+    li a:hover{
+      color: white;
+    }
+
+    
 
 h1 {
     font-family: Quicksand-Light;
@@ -36,26 +78,26 @@ div {
 
 /*making an unordered list without the bulletpoints*/
 
-ul {
+ul.secondlist {
     list-style: none;
     font-family: Quicksand-Light;
     text-align: left;
 }
 a:link {
     text-decoration: none;
-     color: black;
+     color: #999;
 }
 
 /* visited link */
 a:visited {
       text-decoration: none;
-      color: #818181;
+      color: #999;
 }
 
 /* mouse over link */
 a:hover {
       text-decoration: none;
-     color: #818181;
+     color: #999;
 
     
 }
@@ -63,7 +105,7 @@ a:hover {
 /* selected link */
 a:active {
       text-decoration: none;
-     color: black;
+     color: #999;
     
 }
 .sidenav {
@@ -130,6 +172,15 @@ a:active {
     /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
 }
 
+.container {
+    /* starter width in pixels, divs display block by default*/
+    width: 900px;
+    height: 40px;
+    margin: 0px auto;
+    padding: 20px;
+    /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+}
+
 #container .image-container {
     text-align: center;
     vertical-align: middle;
@@ -153,8 +204,13 @@ a:active {
 
 .thumbnail {
     width: 700px;
-    height: 700px;
+    height: 500px;
+    padding-bottom: 10px; 
+    padding-top: 10px;
     float: left;
+          background-color: none;
+
+
 }
 
 
@@ -219,3 +275,39 @@ a:active {
     width: 300px;
     margin: 0 10px;
 }
+
+.container1{
+  width: 900px;
+  margin: 0 auto;
+}
+
+.polaroid{
+  position: relative;
+  width: 580px;
+  display: inline-block;
+  margin:  20px;
+}
+
+/* descedant selector to only target images within the polaroid divs */
+
+.polaroid img{
+  width: 100%;
+  height: auto;
+  border: 10px solid white;
+  border-bottom-width: 45px;
+  /* box-shadow: x shadow width | y shadow height | blur | spread | color */
+  -webkit-box-shadow:5px 5px 5px 5px rgba(10,10,10, 0.5); /* older chrome and safari */
+  -moz-box-shadow:5px 5px 5px 5px rgba(10,10,10, 0.5); /* older forefox */
+  box-shadow: 5px 5px 5px 5px rgba(10,10,10, 0.5);
+}
+
+.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 600px;
+  bottom: 0px;
+  color: #888;
+}
+
+
+

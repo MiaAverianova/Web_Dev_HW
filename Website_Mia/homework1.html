@@ -1,111 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Maria Averianova</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <title>Mia's Recipe</title>
+    <!-- Based on the classes we have applied to our container and thumbnail divs, today we will explore how margins, padding, and borders effect the dimensions of our block level elements in both pixel and percentage based grid systems. -->
+    <link rel="stylesheet" type="text/css" href="recipewebsite.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#">Mia Averianova</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <ul class="firstlist">
+        <li><a href="homework1.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </head>
+
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#SiteMap">SiteMap</a>
+            <a href="#Article">Lissa Aguilar's Article</a>
+            <a href="#Wireframed">Wireframed</a>
+            <a href="recipewebsite.html">Recipe</a>
         </div>
-        <!-- /.container -->
-    </nav>
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Mia Averianova</h1>
-                        <h3>Intoduction to Web Development</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <section id="about" class="paralla-section">
-                                <div class="container">
-                                    <div class="middle">
-                                        <div class="about-des">
-                                            <a name="services"></a>
-                                            <div class="content-section-a">
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="col-lg-11 col-sm-11">
-                                                            <hr class="section-heading-spacer">
-                                                            <div class="clearfix"></div>
-                                                            <h3><font color="black">Assignment</h3></font>
-                                                            <p>
-                                                                <font size=3px color="black"> 1. Take a look at a fairly complicated recipe website. Using a tool of your choice, analyze/diagram what their site map and information architecture looks like. Obviously, I don’t expect you to go down to the individual recipe level, but be sure to show how the site you choose breaks down their recipes into categories and at least 1 sub-category.</p>
-                                                            </font>
-                                                            <p>
-                                                                <font size=3px color="black"> 2. Read this article on wireframing. Post a brief reaction on your blog. If your blog is not set up yet, push a .txt file to your week2 hw folder on your class repository.</p>
-                                                            </font>
-                                                            <p>
-                                                                <font size=3px color="black"> 3. Using the recipe you uploaded last week (or a new one) wireframe your desired layout for a single recipe page on your hypothetical recipe site. Think - rows, columns, sidebars, headers, footers etc. Be sure to mark up each block of content in your wireframe with a few HTML tags for practice.</p>
-                                                            </font>
-                                                            <p>
-                                                                <font size=3px color="black"> 4. Mark up your recipe in HTML semantically based on your wireframe. Bonus points for applying some basic font and color styles.</p>
-                                                            </font>
-                                                        </div>
-                                                    </div>
-                            </section>
-                            <section id="counter" class="paralla-section">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-3 col-sm-3 counter-item">
-                                            <h3> <a style="text-decoration: none; color: white;" href = "http://ma3669.nyuad.im/sitemap.html"class="counter-number" data-from="1" data-to="4" data-speed="1000">Site Map</h3></a>
-                                            <span class="counter-text"></span>
-                                        </div>
-                                        <div class="col-md-3 col-sm-3 counter-item">
-                                            <h3> <a style="text-decoration: none; color: white;" href = "http://ma3669.nyuad.im/response.html"class="counter-number" data-from="1" data-to="5" data-speed="2000">Comments of Wireframing</h3>
-                                            <span class="counter-text"></span></a>
-                                        </div>
-                                        <div class="col-md-3 col-sm-3 counter-item">
-                                            <h3> <a style="text-decoration: none; color: white;" href = "http://ma3669.nyuad.im/wireframe.html"class="counter-number" data-from="" data-to="" data-speed="3000" >Wireframed Recipe</h3></a>
-                                            <span class="counter-text"></span>
-                                        </div>
-                                        <div class="col-md-3 col-sm-3 counter-item">
-                                            <h3> <a style="text-decoration: none; color: white;" href = "http://ma3669.nyuad.im/recipewebsite.html"class="counter-number" data-from="" data-to="" data-speed="4000">Recipe Website</h3></a>
-                                            <span class="counter-text"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+        <div class="intro-header">
+            <div class="container">
+                <h1> <a name="SiteMap">
+            <div class="thumbnail-border">SiteMap</div></h1></a>
+                <br class="clear">
+            </div>
+            <div id="container">
+                <embed src="img/sitemaphomework.pdf" width="800px" height="650px" />
+            </div>
+            <hr>
+            <div class="intro-header">
+                <div class="container">
+                    <h1> <a name="Article" href="http://mediatemple.net/blog/tips/five-important-considerations-for-wireframing/?utm_source=weekly_newsletter&utm_medium=email&utm_campaign=aug17newsletter">
+              <div class="thumbnail-border">Lissa Aguilar's Article</div></h1></a>
+                    <br class="clear">
+                </div>
+                <p>The concept of Wireframing opens up a new approch to the User Experience design. I was not familiar with this technique prior to taking the class, however, reading the article by Lissa Aguilar deepened my understanding of web development as a complicated and lengthy process.</p>
+                <p>I believe, wireframing can be a useful and time-efficient tool used when building a web page. Not only does wireframing take into considerations the tastes and preferences of the clients, but it also allow for better visual representation of ideas and its practical implementation.</p>
+                <p>To build the recipe website, I decided to use <a href="https://wireframe.cc/pro/">wireframe.cc</a> to create a visual map of my website.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="intro-header">
+            <div class="container">
+                <h1> <a name="Wireframed" >
+            <div class="thumbnail-border">Wireframed</div></h1></a>
+                <br class="clear">
+            </div>
+            <div id="container">
+                <embed src="img/wireframe.pdf" width="800px" height="600px" />
+            </div>
+            <hr>
+            <div class="intro-header">
+                <div class="container">
+                    <h1> <a name="Recipe">
+            <div class="thumbnail-border">Recipe Website</div></h1></a>
+                    <br class="clear">
+                    <div class="container1">
+                        <div class="polaroid">
+                            <p>Click <a href="recipewebsite.html">HERE</a> to visit the website</p>
+                            <img src="img/polaroid.jpg">
+                        </div>
+                    </div>
+                </div>
+    </body>
