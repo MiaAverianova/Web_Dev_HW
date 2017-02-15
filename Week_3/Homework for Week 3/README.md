@@ -6,6 +6,8 @@ I am working on my index.html and will upload it as soon as possible.
 
 Links to my homework:
 
-GitHub: 
+GitHub: https://github.com/MiaAverianova/Web_Dev_HW/tree/master/Week_3
+
 Server: http://ma3669.nyuad.im/homework1.html
+
 Server Recipe Website: http://ma3669.nyuad.im/recipewebsite.html
