@@ -1,0 +1,216 @@
+html {
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*If you want it to work in IE*/
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+
+
+/*Navigation styles*/
+
+header {
+    width: 80%;
+    padding: 0 10%;
+    /*80% + 10% + 10% = 100%*/
+    height: 50px;
+    position: fixed;
+    /* z-index: 10 - in front of everything else;  */
+    margin-bottom: 10px;
+    z-index: 10;
+    background-color: black;
+    background: url('../img/tweed.png');
+}
+
+header h1 {
+    display: inline-block;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    float: right;
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(40, 40, 40, 0.1);
+}
+
+
+/*or nav > li = means there is a list item right after the other one
+as in, list item's direct parent is a nav, which is not, because it's unordered list  */
+
+nav li {
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    /*to center the text in 50px container*/
+    line-height: 50px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+}
+
+nav a {
+    /*make space more clickable -> larger*/
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    /* CSS3 property, always check for browser compatibility and prefixes needed */
+    /* transition: CSS property | timing | ease */
+    transition: all 1s;
+}
+
+nav a.active {
+    background-color: white;
+    color: #444;
+}
+
+nav a:hover {
+    background-color: rgba(10, 10, 10, 0.5);
+    /* made it 50% opague*/
+    color: #FFF;
+}
+
+
+/*Gallery styles*/
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.polaroid {
+    position: relative;
+    width: 240px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    border: 10px solid #FEF9EF;
+    border-bottom: 45px solid #FEF9EF;
+    /*h-shadow v-shadow | blur spread color*/
+    /*use prefixes when you have a new feature*/
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+    /*the previous ones don't matter*/
+    box-shadow: 3px 3px 3px 3px rgba(10, 10, 10, 0.5);
+}
+
+
+/*the text next to the polaroid border*/
+
+.polaroid p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    font: 400 18px 'Kaushan Script', cursive;
+    color: #888;
+}
+
+
+/*Transforms*/
+
+.rotate-left, .scaleUniform, .scaleX{
+    transition: all 2s ease-in-out;
+}
+
+.rotate-left {
+    transform: rotate(-10deg);
+    transform-origin: 50% 50%;
+    
+    
+}
+
+.rotate-left:hover{
+    transform: rotate(10deg);
+}
+
+.scaleUniform{
+    transform: scale(0.5);
+    z-index: 20;
+    /*header had a z-index of 10*/
+}
+.scaleUniform:hover{
+    transform: scale(1.5);
+}
+
+.scaleX{
+    transform: scale(2, 1);
+    /*2 and 1 are 200% and 100%*/
+}
+
+.scaleX:hover{
+    transform: scale(0.5, 1);
+    /*2 and 1 are 200% and 100%*/
+}
+
+.scaleY{
+    transform: scale(1,2);
+}
+
+.skewX{
+    transform: skewX(20deg);
+}
+
+.skewY{
+    transform: skewY(20deg);
+}
+
+.skewBoth{
+    transform: skew(-45deg, 4deg);
+}
+
+
+.rotX{
+    transform: rotateX(45deg);
+
+}
+.rotY{
+     transform: rotateY(180deg);
+
+}
+.rotY:hover{
+    transform: rotateY(360deg);
+}
+
+.rotZ{
+     transform: rotateZ(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

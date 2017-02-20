@@ -1,0 +1,372 @@
+
+    /* transparent blue bg, and minimum height so we can keep track of our divs and semantic markup elements without having to add content. */
+    
+    div,
+    header,
+    footer,
+    section,
+    aside,
+    article,
+    main {
+        min-height: 100px;
+        /* RGBA color, red, green, blue (0-255) and alpha (0-1) */
+        background-color: white;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+    }
+    
+    .container {
+        width: 400px;
+        display: inline-block;
+        height: 80px;
+        margin-right: 10px;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Quicksand-Light';
+        font-size: 20px;
+        color: black;
+        background-color: #d1d1d1;
+    }
+    
+    div.wrapper {
+        width: 1300px;
+        /* use margin 0 auto to center our wrapper div within the browser window */
+        margin: 0 auto;
+        /* add a little padding so we can see how child elements stack more clearly */
+        padding: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        position:relative;
+        z-index:101;
+        background-color: #d1d1d1;
+    }
+    
+    header,
+    footer {
+        width: 100%;
+        background-color: white;
+    }
+    /* Define these after adding to html! Notice the clear issue with floating! */
+    
+    article {
+        width: 1300px;
+        float: left;
+        margin: 0px 20px;
+        width: 1260px;
+
+        /* option 2:  add some margins; */
+        /* 600-20-20=560px */
+        /* width: 560px;
+            margin: 0px 20px; */
+    }
+    
+    br.clear {
+        clear: both;
+        height: 0;
+    }
+    
+    .image {
+        width: 300px;
+        position: relative;
+        padding: 80px 0;
+    }
+    
+    ul.firstlist {
+        /* remove the bullet points */
+        height: 0px;
+        background-color: white;
+        padding: 60px 0;
+        float: right;
+    }
+    
+    ul.secondlist {
+        width: 300px;
+        padding-left: 5px;
+        padding-right: none;
+        overflow: hidden;
+        background-color: none;
+        border-top: none;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul.title {
+        padding: 0px 0px 0px 0px;
+        width: 300px;
+        /* Stay in place */
+        z-index: 2;
+        position: relative;
+    }
+    
+    span {
+        color: #999;
+        font-size: 30px;
+        cursor: pointer;
+        position: relative;
+        float: right;
+    }
+    
+    span:hover {
+        color: black;
+        position: relative;
+        float: right;
+    }
+    
+    li {
+        /* float first and then we will switch to inline */
+        /* float: left; */
+        /* use inline */
+        display: inline-block;
+    }
+    
+    li a {
+        /* anchor tags by default display inline, here we are telling them to behave like a block element. Making the anchor block and adding dimensions padding we get a bigger clickable area for the user to select*/
+        display: block;
+        text-align: center;
+        width: 100px;
+        height: none;
+        padding: 10px;
+        /* remove that ugly underline and color */
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        color: black;
+    }
+    
+    .maincontainer {
+        width: 1300px;
+        height: 500px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1.text {
+        display: block;
+        color: white;
+        font-family: Quicksand-Light;
+        font-variant: normal;
+        font-weight: bold;
+        line-height: 26.4px;
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        font-size: 30px;
+        line-height: 1.45em;
+        letter-spacing: .18em;
+        font-weight: 700;
+        font-style: normal;
+        margin: 0;
+        padding: 50px;
+        position: 0;
+    }
+    
+    h1.image {
+        margin: 0;
+        padding: 0;
+        width: 1300px;
+        height: 500px;
+        background-image: url(img/image_1.jpg);
+        background-size: cover;
+        position: center;
+        background-attachment: fixed;
+    }
+    
+    h1.button {
+        padding: 0px 0px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    
+    h1.button:hover {
+        background-color: white
+    }
+    
+    h1.button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    
+    .h2container h2 {
+        width: 1300px;
+        height: 500px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h2 {
+        font-family: Quicksand-Light;
+        font-size: 20px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 500;
+        line-height: 26.4px;
+        position: absolute;
+        background-color: white;
+    }
+    
+    h3 {
+        font-family: Quicksand-Light;
+        font-size: 22px;
+        color: black;
+        font-weight: 400;
+        line-height: 16px;
+    }
+    
+    p {
+        font-family: Quicksand-Light;
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+        
+    }
+    /*Use a tag selector to add a transparent background to all divs on our page so w can select them. */
+    
+    div {
+        background-color: rgba(0, 0, 0, 0);
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+    }
+    
+    div.header {
+        max-width: 1400px;
+        height: 200px;
+        background-color: white;
+        position: relative;
+    }
+    /*making an unordered list without the bulletpoints*/
+    
+    ul.secondlist {
+        list-style: none;
+        font-family: Quicksand-Light;
+        text-align: left;
+    }
+    
+    a:link {
+        text-decoration: none;
+        color: #999;
+    }
+    /* visited link */
+    
+    a:visited {
+        text-decoration: none;
+        color: #999;
+    }
+    /* mouse over link */
+    
+    a:hover {
+        text-decoration: none;
+        color: #999;
+    }
+    /* selected link */
+    
+    a:active {
+        text-decoration: none;
+        color: #999;
+    }
+    
+    .sidenav {
+        height: 100%;
+        /* 100% Full-height */
+        width: 0px;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 100;
+        /* Stay on top */
+        top: 0;
+        left: 0px;
+        background-color: #d1d1d1;;
+        /* Black*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidenav */
+    }
+    
+    .sidenav a {
+        padding: 4px 4px 4px 22px;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        display: block;
+        transition: 0.3s
+    }
+    
+    .sidenav a:hover,
+    .offcanvas a:focus {
+        color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+    /* Fixed width container and grid using pixels */
+    
+    .container {
+        /* starter width in pixels, divs display block by default*/
+        width: 900px;
+        height: 40px;
+        margin: 0px auto;
+        padding: 20px;
+        /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+    }
+    
+    .container {
+        /* starter width in pixels, divs display block by default*/
+        width: 900px;
+        height: 40px;
+        margin: 0px auto;
+        padding: 20px;
+        /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+    }
+    
+    #container .image-container {
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+    }
+    
+    #container .image-container img {
+        max-width: 10px;
+        max-height: 60px;
+    }
+    /*Aligning the text for the header*/
+    
+    .intro-header {
+        text-align: center;
+    }
+
+
+
+
+

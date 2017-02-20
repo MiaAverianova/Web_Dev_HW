@@ -2,23 +2,78 @@ body {
     font-family: 'Quicksand-Light';
     font-size: 20px;
     color: black;
+    background-color: #d1d1d1;
 }
 
 <title>NvBar</title> * {
     margin: 0;
     padding: 0;
+
+}
+
+
+
+.image{
+    
+    width:400px;
+    position:relative;
+    float: left;
+    z-index: 1;
+    padding: 20px;
 }
 
 ul.firstlist {
     /* remove the bullet points */
     list-style-type: none;
     overflow: hidden;
-    background-color: black;
+    background-color: white;
     border-top: none;
+    position: relative;
+float:right;
+
+}
+
+ul.secondlist {
+    width: 300px;
+    padding-left: 5px;
+    padding-right: none;
+    overflow: hidden;
+    background-color: none;
+    border-top:none;
+     position: relative;
+
+    
+
+}
+
+
+
+ul.title{
+    padding: 0px 0px 0px 0px;
+    width: 300px;
+     /* Stay in place */
+    z-index: 2;
+    position: relative;
+
+}
+
+span {
+    color: #999;
+   
+    font-size:30px;
+    cursor:pointer;
+    position: relative;
+    float: right;
+    }
+span:hover {
+    color: white;
+    position:relative;
+   
+    float:right;
 }
 
 li {
-    /* float first and thenwe will switch to inline */
+    /* float first and then we will switch to inline */
     /* float: left; */
     /* use inline */
     display: inline-block;
@@ -36,7 +91,7 @@ li a {
 }
 
 li a:hover {
-    color: white;
+    color: black;
 }
 
 h1 {
@@ -45,17 +100,27 @@ h1 {
     font-variant: normal;
     font-weight: 500;
     line-height: 26.4px;
-    position: left;
+    position: right;
 }
 
 h2 {
     font-family: Quicksand-Light;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
     line-height: 26.4px;
 }
+
+h3{
+    font-family: Quicksand-Light;
+    font-size:22px;
+    color: black;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+
 
 p {
     font-family: Quicksand-Light;
@@ -66,9 +131,21 @@ p {
 
 div {
     background-color: rgba(0, 0, 0, 0);
+    padding-left: 15px;
+    padding-right: 15px;
+    position:relative;
+   
+
 }
 
 
+div.header {
+    max-width: 1400px;
+    height:200px;
+    background-color: white;
+    border: 50px solid #d1d1d1;
+    position:relative;
+}
 /*making an unordered list without the bulletpoints*/
 
 ul.secondlist {
@@ -109,7 +186,7 @@ a:active {
 .sidenav {
     height: 100%;
     /* 100% Full-height */
-    width: 0;
+    width: 0px;
     /* 0 width - change this with JavaScript */
     position: fixed;
     /* Stay in place */
@@ -117,7 +194,7 @@ a:active {
     /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color:  #d1d1d1;
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -128,10 +205,10 @@ a:active {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 4px 4px 4px 22px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 18px;
+    color: black;
     display: block;
     transition: 0.3s
 }
@@ -262,48 +339,15 @@ a:active {
 }
 
 
-/*More Math to Modify Our Pixel based layout to account for Borders and Padding*/
-
-.thumbnail-border-padding {
-    width: 600px;
-    height: 200px;
-    float: right;
-    width: 300px;
-    margin: 0 10px;
-}
-
-.container1 {
-    width: 900px;
-    margin: 0 auto;
-}
-
-.polaroid {
-    position: relative;
-    width: 580px;
-    display: inline-block;
-    margin: 20px;
-}
 
 
-/* descedant selector to only target images within the polaroid divs */
 
-.polaroid img {
-    width: 100%;
-    height: auto;
-    border: 10px solid white;
-    border-bottom-width: 45px;
-    /* box-shadow: x shadow width | y shadow height | blur | spread | color */
-    -webkit-box-shadow: 5px 5px 5px 5px rgba(10, 10, 10, 0.5);
-    /* older chrome and safari */
-    -moz-box-shadow: 5px 5px 5px 5px rgba(10, 10, 10, 0.5);
-    /* older forefox */
-    box-shadow: 5px 5px 5px 5px rgba(10, 10, 10, 0.5);
-}
 
-.polaroid p {
-    position: absolute;
-    text-align: center;
-    width: 600px;
-    bottom: 0px;
-    color: #888;
-}
+
+
+
+
+
+
+
+

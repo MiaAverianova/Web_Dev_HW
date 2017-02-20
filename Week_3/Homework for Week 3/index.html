@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<header>
+    <div class="header">
+        <title>Mia Averianova</title>
+        <!-- Based on the classes we have applied to our container and thumbnail divs, today we will explore how margins, padding, and borders effect the dimensions of our block level elements in both pixel and percentage based grid systems. -->
+        <link rel="stylesheet" type="text/css" href="recipewebsite.css">
+        <img class="image" src="img/signature.png" alt="Mia Averianova" class="Header-branding-logo">
+        <ul class="firstlist">
+            <li><a href="homework1.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <span onclick="openNav()">&#9776;</span>
+            <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+        </ul>
+    </div>
+    </header>
+
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="title">
+            <a><h3>Midterm Proposal</h3></a>
+            <ul class="secondlist">
+                <a href="#Pinterest">Pinterest Board</a>
+                <a href="#Websites">Websites</a>
+                <a href="#SiteMap">SiteMap</a>
+                <a href="#Wireframe">Wireframe</a>
+                <a href="#Learned">Concepts Learned</a>
+                <a href="#Potential">Potential</a>
+                <ul class="title">
+                    <a><h3>Recipe Website</h3></a>
+                    <a href="#SiteMap">SiteMap</a>
+                    <a href="#Article">Lissa Aguilar's Article</a>
+                    <a href="#Wireframed">Wireframed</a>
+                    <a href="recipewebsite.html">Recipe</a>
+                </ul>
+    </div>
+
+    <main>
+     <h1>Main Content Section- heading elements display block!</h1>
+            <article>
+                <h2>Article with 3 sections.</h2>
+                <section>
+                    <h3>Section 1</h3></section>
+                <section>
+                    <h3>Section 2</h3></section>
+                <section>
+                    <h3>Section 3</h3></section>
+            </article>
+            <aside>
+                <h2>Sidebar</h2></aside>
+            <!-- clear out so our wrapper div wraps around. we will discuss several clearfixes this week -->
+            <br class="clear" />
+    </main>
+</body>

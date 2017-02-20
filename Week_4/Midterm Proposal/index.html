@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>mia averianova</title>
+    <link rel="shortcut icon" href="img/mia.jpg" />
+    <!-- Enough with the style tag! Let's link to an external style sheet that we can reuse common styles across an entire site -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- Header, Main, Sidebar, Footer with pixels  -->
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <title>Mia Averianova</title>
+                <!-- Based on the classes we have applied to our container and thumbnail divs, today we will explore how margins, padding, and borders effect the dimensions of our block level elements in both pixel and percentage based grid systems. -->
+                <link rel="stylesheet" type="text/css" href="recipewebsite.css">
+                <link rel="stylesheet" type="text/css" href="style.css">
+                <img class="image" src="img/signature.png" alt="Mia Averianova" class="Header-branding-logo">
+                <ul class="firstlist">
+                    <li><a href="homework1.html">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">travel</a></li>
+                    <li><a href="#">contact</a></li>
+                    <span onclick="openNav()">&#9776;</span>
+                    <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+                    </script>
+                </ul>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="title">
+                    <a><h3>Midterm Proposal</h3></a>
+                    <ul class="secondlist">
+                        <a href="#Pinterest">Pinterest Board</a>
+                        <a href="#Websites">Websites</a>
+                        <a href="#SiteMap">SiteMap</a>
+                        <a href="#Wireframe">Wireframe</a>
+                        <a href="#Learned">Concepts Learned</a>
+                        <a href="#Potential">Potential</a>
+                        <ul class="title">
+                            <a><h3>Recipe Website</h3></a>
+                            <a href="#SiteMap">SiteMap</a>
+                            <a href="#Article">Lissa Aguilar's Article</a>
+                            <a href="#Wireframed">Wireframed</a>
+                            <a href="recipewebsite.html">Recipe</a>
+                        </ul>
+            </div>
+        </header>
+        <main>
+            <div class="maincontainer">
+                <a name="Pinterest" href="https://www.pinterest.com/maverianova/ideas-for-my-website/"><h1  class="text image">my pinterest board</h1></a>
+            </div>
+            <article>
+                <section>
+                    <a name="Websites"><h3>Websites</h3></a>
+                    <p>The websites I will be referring to are:
+                        <a href="http://www.lizataitbailey.com/">lizataitbailey.com</a> and <a href="http://www.heynadine.com/">HeyNadine</a>.
+                    </p>
+                </section>
+                <section>
+                   <a name="SiteMap"> <h3>SiteMap</h3></a>
+                     <div id="container">
+                <embed src="img/my-website.pdf" width="800px" height="650px" />
+            </div></section>
+                <section>
+                    <a name="Wireframe"><h3>Wireframe</h3>
+            <div id="container">
+                <embed src="img/homepage.pdf" width="800px" height="650px" />
+            </div>
+            <div id="container">
+                <embed src="img/about.pdf" width="800px" height="650px" />
+            </div> <div id="container">
+                <embed src="img/travel.pdf" width="800px" height="650px" />
+            </div>
+
+                    </section></a>
+                <section>
+                    <a name="Learned"><h3>What to do</h3></a>
+                    <p> What I know: rows, columns, sidebars, headers, footers, navigation bars, layouts, fonts, colors, margins, padding.</p>
+                    <p>What I need to learn: get comfortable with divs and floats. Text on top of the images, slideshows and footers. </p>
+                </section>
+            </article>
+            <br class="clear" />
+        </main>
+    
+        </div>
+    </div>
+</body>
+
+</html>
