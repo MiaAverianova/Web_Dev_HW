@@ -1,6 +1,10 @@
 /* transparent blue bg, and minimum height so we can keep track of our divs and semantic markup elements without having to add content. */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+*{
+    margin:0;
+    padding:0;
+}
 div,
 header,
 footer,
@@ -15,15 +19,9 @@ main {
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
+     
 }
 
-.container {
-    width: 400px;
-    display: inline-block;
-    height: 80px;
-    margin-right: 10px;
-    padding: 0;
-}
 
 body {
     font-family: 'Quicksand-Light';
@@ -34,28 +32,26 @@ body {
 }
 
 div.wrapper {
-    width: 1300px;
+    width: 100%;
     /* use margin 0 auto to center our wrapper div within the browser window */
     margin: 0 auto;
     /* add a little padding so we can see how child elements stack more clearly */
-    padding: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 0px;
+   
     position: relative;
     z-index: 101;
     background-color: white;
+   
 }
 
 
 /*-----------------------------------------------------------------------------------------------*/
 
-
 /* My icons in the header and the footer */
 
 div {
     background-color: rgba(0, 0, 0, 0);
-    padding-left: 15px;
-    padding-right: 15px;
+   
     position: relative;
 }
 
@@ -113,7 +109,7 @@ header footer {
 /*-----------------------------------------------------------------------------------------------*/
 
 
-/* Define these after adding to html! Notice the clear issue with floating! */
+/*  Nav Bar */
 
 article {
     width: 1300px;
@@ -134,17 +130,21 @@ br.clear {
 
 .image {
     width: 400px;
+    height: 150px;
     position: relative;
-    padding: 0px 20px;
+    
 }
 
 ul.firstlist {
     /* remove the bullet points */
     height: 100px;
+    
     background-color: white;
-    padding: 30px 0px;
+    padding: 0px 0px;
+    margin:0;
     float: right;
     z-index: 10;
+    text-align: center;
 }
 
 ul.dropdown-list {
@@ -152,23 +152,13 @@ ul.dropdown-list {
     overflow: hidden;
     border-top: none;
     text-decoration: none;
-    padding: 0px 0px;
+    
 }
 
-ul.secondlist {
-    width: 300px;
-    padding-left: 5px;
-    padding-right: none;
-    overflow: hidden;
-    background-color: none;
-    border-top: none;
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
+
 
 ul.title {
-    padding: 0px 0px 0px 0px;
+   
     width: 300px;
     /* Stay in place */
     z-index: 2;
@@ -178,7 +168,7 @@ ul.title {
 span {
     color: #999;
     font-size: 30px;
-    cursor: pointer;
+    cursor: default;
     position: relative;
     float: right;
 }
@@ -196,6 +186,7 @@ li {
     display: inline-block;
 }
 
+
 li a {
     /* anchor tags by default display inline, here we are telling them to behave like a block element. Making the anchor block and adding dimensions padding we get a bigger clickable area for the user to select*/
     display: block;
@@ -203,9 +194,11 @@ li a {
     width: 100px;
     height: none;
     padding: 10px;
+    padding-top: 70px;
     /* remove that ugly underline and color */
     text-decoration: none;
 }
+/* Just for the dropdown menu, to eliminate spaces between the text*/
 
 li a:hover {
     color: black;
@@ -224,22 +217,19 @@ h4:hover {
 div.maincontainer {
     width: 1300px;
     height: 500px;
-    margin: 0;
-    padding:  0;
+   
 }
 
 .contactcontainer {
     width: 1300px;
     height: 600px;
-    margin: 0;
-    padding: 40px 0px;
+     padding: 40px 0px;
 }
 
 .imagecontact {
     display: block;
-    margin: 0;
-    padding: 0;
-    width: 1300px;
+    
+    width: 100%;
     height: 600px;
     background-image: url(img/312461.jpg);
     background-size: cover;
@@ -260,7 +250,7 @@ div.maincontainer {
 
 .imagetitle {
     box-sizing: border-box;
-    width: 970px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -276,6 +266,12 @@ div.maincontainer {
     z-index: 100;
     transition: all 1s ease;
 }
+.container-title {
+    overflow: hidden;
+    padding-left: 80px;
+
+}
+
 
 
 .imageold {
@@ -296,6 +292,14 @@ div.maincontainer {
     z-index: 500;
     transition: all 1s ease;
 }
+
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/* All styles for the links */
+
 
 a:link {
     text-decoration: none;
@@ -444,11 +448,11 @@ h5:after {
 }
 
 h5:before {
-    right: 10%;
+    right: 80%;
 }
 
 h5:after {
-    left: 10%;
+    left: 80%;
 }
 
 h6 {
@@ -463,10 +467,10 @@ p {
     font-weight: 900;
 }
 
-.container-title {
-    overflow: hidden;
-    text-align: left;
-}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
 
 
 /* DROPDOWN MENU */
@@ -503,50 +507,50 @@ nav ul li:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-
-/* make the anchor tags in nav display block for clickability */
-
-
-/*nav ul a {
-    color: black;
+a.menu{
+     display: block;
+    text-align: center;
+    width: 100px;
+    height: none;
+    padding: 10px;
+     padding-top: 10px;
+    /* remove that ugly underline and color */
     text-decoration: none;
-    line-height: 20px;
-    padding: 0px;
 
-    z-index: 100;
-   
-
-}*/
+}
 
 
-/*Use a tag selector to add a transparent background to all divs on our page so w can select them. */
-
-
-/* Fixed width container and grid using pixels */
-
+/*-----------------------------------------------------------------------------------------------*/
 
 /*Container with 3 images*/
 
-.container {
+.container{
     /* starter width in pixels, divs display block by default*/
     width: 100%;
     display: inline-block;
     height: auto;
-    margin: 0px 0px;
-    padding: 0px;
+   
+    /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+}
+.container-images {
+    /* starter width in pixels, divs display block by default*/
+    width: 100%;
+   
+    height: auto;
+    
+    padding-left: 70px;
     /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
 }
 
-#container .image-container {
+#container-images .image-container {
     text-align: center;
     vertical-align: middle;
     display: table-cell;
-    padding: 0px 0px;
+
     border: 0;
 }
 
-#container .image-container img {
+#container-images .image-container img {
     max-width: 10px;
     max-height: 60px;
 }
@@ -608,6 +612,7 @@ div.hero {
     position: relative;
     /* when we scale our image on hover clip the overflow */
     overflow: hidden;
+    width: 387px;
 }
 
 
@@ -725,12 +730,18 @@ font-style: normal; }
 
 * {box-sizing:border-box}
 
+/*-----------------------------------------------------------------------------------------------*/
+
+
 /* Slideshow container */
 
 .slideshow-container {
-    max-width: 1000px;
+    width: 100%;
     position: relative;
-    margin: auto;
+    margin: 0;
+    padding:0;
+    display: inline-block;
+    height:500px;
 }
 
 .mySlides {
@@ -743,7 +754,7 @@ font-style: normal; }
 
 .prev,
 .next {
-    cursor: pointer;
+    cursor: default;
     position: absolute;
     top: 50%;
     width: auto;
@@ -801,7 +812,7 @@ font-style: normal; }
 /* The dots/bullets/indicators */
 
 .dot {
-    cursor: pointer;
+    cursor: default;
     height: 13px;
     width: 13px;
     margin: 0 2px;
