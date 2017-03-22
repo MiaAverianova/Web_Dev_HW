@@ -147,6 +147,7 @@ ul.dropdown-list{
     overflow: hidden;
     border-top: none;
     text-decoration: none;
+    padding-left: 0;
     }
 
 
@@ -503,8 +504,24 @@ nav ul li:hover {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block; }
+a.menu{
+     display: block;
+    text-align: center;
+    width: 100px;
+    height: none;
+    padding: 10px;
+     padding-top: 10px;
+    /* remove that ugly underline and color */
+    text-decoration: none;
+    padding-right:0;
+    padding-left:0;
+       text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+
 }
+
 
 
 /*-----------------------------------------------------------------------------------------------*/

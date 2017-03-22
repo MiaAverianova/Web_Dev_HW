@@ -152,6 +152,7 @@ ul.dropdown-list {
     overflow: hidden;
     border-top: none;
     text-decoration: none;
+    padding-left:0;
     
 }
 
