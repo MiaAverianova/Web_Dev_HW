@@ -532,7 +532,7 @@ a.menu{
    
     /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
 }
-.container-images {
+.container-images-travel {
     /* starter width in pixels, divs display block by default*/
     width: 100%;
    
