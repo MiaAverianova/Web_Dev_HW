@@ -1,10 +1,11 @@
 /* transparent blue bg, and minimum height so we can keep track of our divs and semantic markup elements without having to add content. */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
+
 div,
 header,
 footer,
@@ -21,31 +22,33 @@ main {
     vertical-align: baseline;
 }
 
-
 body {
     font-family: 'Quicksand-Light';
     font-size: 20px;
     color: black;
-    background-color: #b295a8;
+    background-color: #f5f5f5;
+    /*#b295a8*/
+    ;
     /*#dedede;*/
 }
 
 div.wrapper {
     width: 1300px;
-   /* use margin 0 auto to center our wrapper div within the browser window */
+    /* use margin 0 auto to center our wrapper div within the browser window */
     margin: 0 auto;
     /* add a little padding so we can see how child elements stack more clearly */
-  
-
     position: relative;
-    background-color: white; 
-
+    background-color: white;
 }
+
+
 /*-----------------------------------------------------------------------------------------------*/
+
+
 /* My icons in the header and the footer */
+
 div {
     background-color: rgba(0, 0, 0, 0);
-  
     position: relative;
 }
 
@@ -55,6 +58,7 @@ div.header {
     background-color: white;
     position: relative;
 }
+
 div.footer {
     max-width: 1400px;
     height: 150px;
@@ -67,38 +71,40 @@ div.footer {
 div.copyright {
     word-spacing: 0em;
 }
+
 .icons {
-float: right;
-display: inline-block; 
-z-index: 3;
-text-align: left;
-position: absolute;
-right:0px; 
-top: 0px;
-word-spacing: 1em;
-padding: 20px 43px;
+    float: right;
+    display: inline-block;
+    z-index: 3;
+    text-align: left;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    word-spacing: 1em;
+    padding: 20px 43px;
 }
-
-
 
 .fa {
     color: #dedede;
 }
-.fa:hover{
-    color: #b295a8;
+
+.fa:hover {
+    color: #b79567;
     /*color: #a7914a;*/
 }
-header
-footer {
+
+header footer {
     width: 100%;
     background-color: white;
 }
-.icons.footer {
-padding: 0px 13px;
-word-spacing: 1em;
-}
-/*-----------------------------------------------------------------------------------------------*/
 
+.icons.footer {
+    padding: 0px 13px;
+    word-spacing: 1em;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
 
 
 /*  Nav Bar
@@ -113,7 +119,7 @@ article {
     /* 600-20-20=560px */
     /* width: 560px;
             margin: 0px 20px; */
-            height: 100%;
+    height: 100%;
 }
 
 br.clear {
@@ -123,37 +129,30 @@ br.clear {
 
 .image {
     width: 400px;
-    height:150px;
+    height: 150px;
     position: relative;
-    
-
 }
 
 ul.firstlist {
     /* remove the bullet points */
     height: 100px;
     background-color: white;
-     padding: 0px 0px;
-    margin:0;
+    padding: 0px 0px;
+    margin: 0;
     float: right;
     z-index: 10;
     text-align: center;
-
-
 }
 
-ul.dropdown-list{
-    text-align:center;
+ul.dropdown-list {
+    text-align: center;
     overflow: hidden;
     border-top: none;
     text-decoration: none;
     padding-left: 0;
-    }
-
-
+}
 
 ul.title {
-    
     width: 300px;
     /* Stay in place */
     z-index: 2;
@@ -188,13 +187,13 @@ li a {
     width: 100px;
     height: none;
     padding: 10px;
-    padding-top:70px;
+    padding-top: 70px;
     /* remove that ugly underline and color */
     text-decoration: none;
 }
 
 li a:hover {
-    color: black;
+    color: #b79567;
 }
 
 h4:hover {
@@ -210,15 +209,13 @@ h4:hover {
 div.maincontainer {
     width: 1300px;
     height: 500px;
-   
 }
+
 .contactcontainer {
     width: 1300px;
     height: 600px;
-  
     padding: 40px 0px;
 }
-
 
 .mainimage {
     display: block;
@@ -234,6 +231,7 @@ div.maincontainer {
     position: relative;
     z-index: 3;
 }
+
 .contactimage {
     display: block;
     margin: 0;
@@ -251,20 +249,15 @@ div.maincontainer {
 
 .mainimage:hover {
     opacity: 0.5;
-    
-
 }
 
 .contactimage:hover {
     opacity: 0.3;
-
-
 }
-
 
 .imagetitle {
     width: 100%;
-   margin-right: auto;
+    margin-right: auto;
     margin-left: auto;
     display: block;
     top: 40%;
@@ -279,36 +272,40 @@ div.maincontainer {
     z-index: 100;
     transition: all 1s ease;
 }
+
 .container-title {
-  overflow: hidden;
-  text-align: left;
+    overflow: hidden;
+    text-align: left;
 }
+
+
 /*-----------------------------------------------------------------------------------------------*/
+
+
 /* All styles for the links */
+
 a:link {
     text-decoration: none;
-    color: #999;
-
-}
-a.info:link{
-   text-decoration: none;
     color: black;
-}  
+}
 
+a.info:link {
+    text-decoration: none;
+    color: black;
+}
 
 
 /* visited link */
- 
 
 a:visited {
     text-decoration: none;
-    color: #999;
+    color: black;
 }
 
-a.info:visited{
-   text-decoration: none;
+a.info:visited {
+    text-decoration: none;
     color: black;
-}  
+}
 
 
 /* mouse over link */
@@ -316,7 +313,6 @@ a.info:visited{
 a:hover {
     text-decoration: none;
     color: black;
-
 }
 
 
@@ -326,7 +322,6 @@ a:active {
     text-decoration: none;
     color: black;
 }
-
 
 button {
     display: inline-block;
@@ -349,14 +344,13 @@ a.info {
 }
 
 a.info:hover,
-button:hover
-{ border: 2px solid black;
-background-color: transparent;
-color: black;
-font-weight: 900;
-text-transform: uppercase;
+button:hover {
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
 }
-
 
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -389,10 +383,9 @@ h3 {
     color: black;
     font-weight: 900;
     line-height: 16px;
-
 }
 
-h4{ 
+h4 {
     font-family: Quicksand;
     font-size: 10px;
     color: black;
@@ -401,23 +394,18 @@ h4{
     z-index: 1000;
 }
 
-    h4:hover{
+h4:hover {
     font-size: 15px;
     transition-timing-function: ease-in-out;
     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-
-
-
-    }
-
-
+}
 
 h5 {
-  display: inline-block;
-  padding: 0 15px;
-  position: relative;
-  font-size: 20px;
-  color: #999;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    font-size: 20px;
+    color: #999;
 }
 
 h5:hover {
@@ -426,30 +414,28 @@ h5:hover {
 
 h5:before,
 h5:after {
-  background: #ddd;
-  content: "";
-  display: block;
-  height: 2px;
-  position: absolute;
-  width: 1200px;
+    background: #ddd;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    width: 1200px;
 }
 
 h5:before {
-  right: 80%;
+    right: 80%;
 }
 
 h5:after {
-  left: 80%;
+    left: 80%;
 }
 
-
-h6{
+h6 {
     color: #999;
     font-size: 14px;
-   
 }
 
- p {
+p {
     font-family: Quicksand-Light;
     font-size: 16px;
     color: black;
@@ -460,7 +446,6 @@ h6{
 /*-----------------------------------------------------------------------------------------------*/
 
 
-
 /* DROPDOWN MENU */
 
 nav ul {
@@ -469,22 +454,15 @@ nav ul {
     z-index: 1000;
 }
 
-
-
 nav ul li:hover {
     background-color: transparent;
     z-index: 1000;
-
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
     height: 20px;
-
-
-
-
 }
 
 .dropdown-content {
@@ -492,42 +470,39 @@ nav ul li:hover {
     position: absolute;
     background-color: white;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-      
-
-
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 10;
     font-size: 10px;
-    text-align:center;
+    text-align: center;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; }
-a.menu{
-     display: block;
+    display: block;
+}
+
+a.menu {
+    display: block;
     text-align: center;
     width: 100px;
     height: none;
     padding: 10px;
-     padding-top: 10px;
+    padding-top: 10px;
     /* remove that ugly underline and color */
     text-decoration: none;
-    padding-right:0;
-    padding-left:0;
-       text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
     vertical-align: middle;
     display: table-cell;
-
 }
-
 
 
 /*-----------------------------------------------------------------------------------------------*/
 
 
 /* Fixed width container and grid using pixels */
+
 
 /*Container with 3 images*/
 
@@ -536,7 +511,7 @@ a.menu{
     width: 100%;
     display: inline-block;
     height: auto;
-    
+    padding-left:45px;
     /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
 }
 
@@ -558,7 +533,6 @@ a.menu{
 .intro-header {
     text-align: center;
 }
-
 
 
 /*
@@ -596,8 +570,8 @@ div.hero {
     background: -moz-linear-gradient(left, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.3) 100%);
     /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.3) 100%);
-    /* Chrome10-25,Safari5.1-6 */   
-    background: linear-gradient(to right, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.3) 100%);    
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.3) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#80ff0000', endColorstr='#4d0000ff', GradientType=1);
     /* IE6-9 */
@@ -612,7 +586,9 @@ div.hero {
     overflow: hidden;
 }
 
+
 /*for all the text*/
+
 .mask {
     padding-top: 0%;
     width: 378px;
@@ -627,11 +603,8 @@ div.hero {
 }
 
 .mask p {
-    
     font-weight: 900;
 }
-
-
 
 a.info,
 button:hover,
@@ -676,7 +649,6 @@ button:hover,
 .thumb:hover img {
     transform: scale(1.5) rotate(0deg);
 }
-
 
 
 /* =============================================================================
@@ -725,5 +697,3 @@ url('../fonts/FontName.ttf') format('truetype'),
 url('../fonts/FontName.svg#FontName') format('svg');
 font-weight: normal;
 font-style: normal; }
-
-

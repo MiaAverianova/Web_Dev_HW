@@ -1,0 +1,950 @@
+/* transparent blue bg, and minimum height so we can keep track of our divs and semantic markup elements without having to add content. */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div,
+header,
+footer,
+section,
+aside,
+article,
+main {
+    min-height: 10px;
+    /* RGBA color, red, green, blue (0-255) and alpha (0-1) */
+    background-color: white;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'Quicksand-Light';
+    font-size: 20px;
+    color: black;
+    background-color: #f5f5f5;
+    /*#b295a8;*/
+    /*#dedede;*/
+}
+
+div.wrapper {
+    width: 100%;
+    /* use margin 0 auto to center our wrapper div within the browser window */
+    margin: 0 auto;
+    /* add a little padding so we can see how child elements stack more clearly */
+    padding: 0px;
+    position: relative;
+    z-index: 101;
+    background-color: white;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/* My icons in the header and the footer */
+
+div {
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+div.header {
+    max-width: 1400px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+}
+
+div.footer {
+    max-width: 1400px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    text-align: center;
+    word-spacing: 1em;
+}
+
+div.copyright {
+    word-spacing: 0em;
+}
+
+.icons {
+    float: right;
+    display: inline-block;
+    z-index: 3;
+    text-align: left;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    word-spacing: 1em;
+    padding: 20px 43px;
+}
+
+.fa {
+    color: #dedede;
+}
+
+.fa:hover {
+    color: #b79567;
+}
+
+header footer {
+    width: 100%;
+    background-color: white;
+}
+
+.icons.footer {
+    padding: 0px 13px;
+    word-spacing: 1em;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*  Nav Bar */
+
+article {
+    width: 1300px;
+    float: none;
+    margin: 0px 20px;
+    width: 1280px;
+    /* option 2:  add some margins; */
+    /* 600-20-20=560px */
+    /* width: 560px;
+            margin: 0px 20px; */
+    height: 100%;
+}
+
+br.clear {
+    clear: both;
+    height: 0;
+}
+
+.image {
+    width: 400px;
+    height: 150px;
+    position: relative;
+}
+
+ul.firstlist {
+    /* remove the bullet points */
+    height: 100px;
+    background-color: white;
+    padding: 0px 0px;
+    margin: 0;
+    float: right;
+    z-index: 10;
+    text-align: center;
+}
+
+ul.dropdown-list {
+    text-align: center;
+    overflow: hidden;
+    border-top: none;
+    text-decoration: none;
+}
+
+ul.title {
+    width: 300px;
+    /* Stay in place */
+    z-index: 2;
+    position: relative;
+}
+
+span {
+    color: #999;
+    font-size: 30px;
+    cursor: default;
+    position: relative;
+    float: right;
+}
+
+span:hover {
+    color: black;
+    position: relative;
+    float: right;
+}
+
+li {
+    /* float first and then we will switch to inline */
+    /* float: left; */
+    /* use inline */
+    display: inline-block;
+}
+
+li a {
+    /* anchor tags by default display inline, here we are telling them to behave like a block element. Making the anchor block and adding dimensions padding we get a bigger clickable area for the user to select*/
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: none;
+    padding: 10px;
+    padding-top: 70px;
+    /* remove that ugly underline and color */
+    text-decoration: none;
+}
+
+
+/* Just for the dropdown menu, to eliminate spaces between the text*/
+
+li a:hover {
+    color: #b79567;
+}
+
+h4:hover {
+    color: #a7914a;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/* Main image and main text - opacity, hovering, text styles*/
+
+div.maincontainer {
+    width: 1300px;
+    height: 500px;
+}
+
+.contactcontainer {
+    width: 1300px;
+    height: 600px;
+    padding: 40px 0px;
+}
+
+.imagecontact {
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-image: url(..img/312461.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    position: relative;
+    z-index: 3;
+}
+
+.contactimage {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 1300px;
+    height: 600px;
+    background-image: url(../img/image_2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.8;
+    transition: opacity .5s ease-out;
+    position: relative;
+    z-index: 3;
+}
+
+.contactimage:hover {
+    opacity: 0.3;
+}
+
+.mainimage:hover {
+    opacity: 0.5;
+}
+
+.imageold {
+    box-sizing: border-box;
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    top: 40%;
+    left: relative;
+    text-align: center;
+    padding: 2%;
+    height: 200px;
+    color: black;
+    opacity: 1;
+    transition: none;
+    position: absolute;
+    z-index: 500;
+    transition: all 1s ease;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/* All styles for the links */
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a.info:link {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* visited link */
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a.info:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    text-decoration: none;
+    color: #b79567;
+}
+
+
+/* selected link */
+
+a:active {
+    text-decoration: none;
+    color: #b79567;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 0px;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: 200;
+    position: absolute;
+}
+
+a.info {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 0px;
+    background-color: #b79567;
+    opacity: 0.5;
+    position: absolute;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+a.info:hover {
+    border: 2px solid black;
+    background-color: #b79567;
+    color: black;
+    opacity: 0.5;
+    position: absolute;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+button:hover {
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/* All font styles */
+
+h1 {
+    font-family: Quicksand-Light;
+    font-size: 16px;
+    color: black;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: Quicksand-Light;
+    font-color: black;
+    font-size: 20px;
+    font-style: solid;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 26.4px;
+    border: 0.5px black;
+    background-color: transparent;
+}
+
+h3 {
+    font-family: Quicksand;
+    font-size: 40px;
+    color: black;
+    font-weight: 900;
+    line-height: 16px;
+}
+
+h4 {
+    font-family: Quicksand;
+    font-size: 10px;
+    color: #b79567;
+    font-weight: 900;
+    line-height: 14px;
+    z-index: 1000;
+}
+
+h4:hover {
+    font-size: 15px;
+    transition-timing-function: ease-in-out;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+h5 {
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    font-size: 20px;
+    color: #999;
+}
+
+h5:hover {
+    color: black;
+}
+
+h5:before,
+h5:after {
+    background: #ddd;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 1200px;
+}
+
+h5:before {
+    right: 80%;
+}
+
+h5:after {
+    left: 80%;
+}
+
+h6 {
+    color: #999;
+    font-size: 14px;
+}
+
+p {
+    font-family: Quicksand-Light;
+    font-size: 22px;
+    color: black;
+    font-weight: 700;
+    margin: 0;
+}
+
+h7 {
+    color: #999;
+    font-size: 18px;
+}
+
+h8 {
+    color: #999;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+h9 {
+    color: white;
+    font-size: 18px;
+}
+
+h10 {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+h12 {
+    font-size: 16px;
+    color: #999;
+    font-weight: 900;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/* DROPDOWN MENU */
+
+nav ul {
+    list-style: none;
+    float: center;
+    z-index: 1000;
+}
+
+nav ul li:hover {
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 10;
+    font-size: 10px;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a.menu {
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: none;
+    padding: 10px;
+    padding-top: 10px;
+    /* remove that ugly underline and color */
+    text-decoration: none;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*Container with 3 images*/
+
+.container {
+    /* starter width in pixels, divs display block by default*/
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+}
+
+.container-images {
+    /* starter width in pixels, divs display block by default*/
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
+    /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+}
+
+.container-images2 {
+    /* starter width in pixels, divs display block by default*/
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    background-color: #b79567;
+    /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+}
+
+.container-images3 {
+    /* starter width in pixels, divs display block by default*/
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+}
+
+.imagetitle {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    top: 30%;
+    left: relative;
+    text-align: center;
+    padding: 2%;
+    height: 200px;
+    opacity: 1;
+    transition: none;
+    position: absolute;
+    z-index: 100;
+    transition: all 1s ease;
+}
+
+.container-title {
+    overflow: hidden;
+    padding-left: 80px;
+}
+
+.container-title2 {
+
+    overflow: hidden;
+    padding-left: 80px;
+    background-color: #b79567;
+}
+
+.img-ljubljana {
+    padding-top: 20px;
+    padding-top: 20px;
+}
+
+.img-maribor {
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.img-bled {
+    padding-right: 30px;
+}
+
+.img-celje {
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+#container-images .image-container {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    border: 0;
+}
+
+#container-images .image-container img {
+    max-width: 10px;
+    max-height: 60px;
+}
+
+
+/*Aligning the text for the header*/
+
+.intro-header {
+    text-align: center;
+}
+
+
+/*
+Responsive 996px grid system ~ Style CSS.
+Copyright 2013, Josh Cope
+*/
+
+
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+
+
+/* Jumbotron/Hero Styles */
+
+div.hero {
+    width: 100vw;
+    /* height: 100vh; */
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.hero article {
+    position: absolute;
+    width: 50%;
+    top: 60%;
+    right: 0%;
+    padding: 2%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0000+0,0000ff+100&0.5+0,0.3+100 */
+    background: -moz-linear-gradient(left, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.3) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.3) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.3) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#80ff0000', endColorstr='#4d0000ff', GradientType=1);
+    /* IE6-9 */
+}
+
+
+/* Portfolio Hover Animation */
+
+.gallery {
+    padding: 20px;
+}
+
+.thumb {
+    position: relative;
+    /* when we scale our image on hover clip the overflow */
+    overflow: hidden;
+    width: 500px;
+}
+
+.thumb2 {
+    position: relative;
+    /* when we scale our image on hover clip the overflow */
+    overflow: hidden;
+    width: 700px;
+}
+
+.thumb3 {
+    position: relative;
+    /* when we scale our image on hover clip the overflow */
+    overflow: hidden;
+    width: 700px;
+    height: auto;
+}
+
+
+/*for all the text*/
+
+.mask {
+    padding-top: 0%;
+    width: 378px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 50%;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.mask p {
+    font-weight: 900;
+}
+
+a.info,
+button:hover,
+{
+    background-color: transparent;
+}
+
+.thumb:hover .mask {
+    opacity: 1;
+}
+
+
+/* initial values for our hidden items */
+
+.thumb .mask h2,
+.thumb .mask p,
+.thumb .mask a {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+}
+
+
+/* scale and make opaque on hover */
+
+.thumb:hover .mask h2,
+.thumb:hover .mask p,
+.thumb:hover .mask a {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* prepare some initial values for our image to change on hover */
+
+.thumb img {
+    transform: scale(0.3);
+    transform: rotate(0deg);
+    transition: all 1s ease;
+}
+
+.thumb:hover img {
+    transform: scale(1.5) rotate(0deg);
+}
+
+
+/* =============================================================================
+   Page Styles
+   ========================================================================== */
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/* Tablet Portrait size to Base 996px */
+
+@media only screen and (min-width: 768px) and (max-width: 995px) {}
+
+
+/* All Mobile Sizes */
+
+@media only screen and (max-width: 767px) {}
+
+
+/* Mobile Landscape Size to Tablet Portrait */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+
+@media only screen and (max-width: 479px) {}
+
+
+/* =============================================================================
+   Font-Face
+   ========================================================================== */
+
+
+/* This is the proper syntax for an @font-face file
+
+/* @font-face {
+font-family: 'FontName';
+src: url('../fonts/FontName.eot');
+src: url('../fonts/FontName.eot?iefix') format('embedded-opentype'),
+url('../fonts/FontName.woff') format('woff'),
+url('../fonts/FontName.ttf') format('truetype'),
+url('../fonts/FontName.svg#FontName') format('svg');
+font-weight: normal;
+font-style: normal; }
+
+
+* {box-sizing:border-box}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 500px;
+}
+
+.mySlides {
+    display: none;
+    opacity: 1;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: default;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px 3px 3px 3px;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 3px 3px 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: #dedede;
+    color: white;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: default;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    position: relative;
+    transition: background-color 0.6s ease;
+    text-align: center;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
+}

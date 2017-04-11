@@ -1,10 +1,11 @@
 /* transparent blue bg, and minimum height so we can keep track of our divs and semantic markup elements without having to add content. */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
+
 div,
 header,
 footer,
@@ -19,15 +20,13 @@ main {
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-     
 }
-
 
 body {
     font-family: 'Quicksand-Light';
     font-size: 20px;
     color: black;
-    background-color: #b295a8;
+    background-color: #f5f5f5;
     /*#dedede;*/
 }
 
@@ -37,21 +36,19 @@ div.wrapper {
     margin: 0 auto;
     /* add a little padding so we can see how child elements stack more clearly */
     padding: 0px;
-   
     position: relative;
     z-index: 101;
     background-color: white;
-   
 }
 
 
 /*-----------------------------------------------------------------------------------------------*/
 
+
 /* My icons in the header and the footer */
 
 div {
     background-color: rgba(0, 0, 0, 0);
-   
     position: relative;
 }
 
@@ -92,7 +89,7 @@ div.copyright {
 }
 
 .fa:hover {
-    color: #b295a8;
+    color: #b79567;
 }
 
 header footer {
@@ -132,16 +129,14 @@ br.clear {
     width: 400px;
     height: 150px;
     position: relative;
-    
 }
 
 ul.firstlist {
     /* remove the bullet points */
     height: 100px;
-    
     background-color: white;
     padding: 0px 0px;
-    margin:0;
+    margin: 0;
     float: right;
     z-index: 10;
     text-align: center;
@@ -152,14 +147,10 @@ ul.dropdown-list {
     overflow: hidden;
     border-top: none;
     text-decoration: none;
-    padding-left:0;
-    
+    padding-left: 0;
 }
 
-
-
 ul.title {
-   
     width: 300px;
     /* Stay in place */
     z-index: 2;
@@ -187,7 +178,6 @@ li {
     display: inline-block;
 }
 
-
 li a {
     /* anchor tags by default display inline, here we are telling them to behave like a block element. Making the anchor block and adding dimensions padding we get a bigger clickable area for the user to select*/
     display: block;
@@ -199,10 +189,12 @@ li a {
     /* remove that ugly underline and color */
     text-decoration: none;
 }
+
+
 /* Just for the dropdown menu, to eliminate spaces between the text*/
 
 li a:hover {
-    color: black;
+    color: #b79567;
 }
 
 h4:hover {
@@ -218,18 +210,16 @@ h4:hover {
 div.maincontainer {
     width: 1300px;
     height: 500px;
-   
 }
 
 .contactcontainer {
     width: 1300px;
     height: 600px;
-     padding: 40px 0px;
+    padding: 40px 0px;
 }
 
 .imagecontact {
     display: block;
-    
     width: 100%;
     height: 600px;
     background-image: url(img/312461.jpg);
@@ -267,13 +257,11 @@ div.maincontainer {
     z-index: 100;
     transition: all 1s ease;
 }
+
 .container-title {
     overflow: hidden;
     padding-left: 80px;
-
 }
-
-
 
 .imageold {
     box-sizing: border-box;
@@ -295,16 +283,14 @@ div.maincontainer {
 }
 
 
-
-
 /*-----------------------------------------------------------------------------------------------*/
+
 
 /* All styles for the links */
 
-
 a:link {
     text-decoration: none;
-    color: #999;
+    color: black;
 }
 
 a.info:link {
@@ -317,7 +303,7 @@ a.info:link {
 
 a:visited {
     text-decoration: none;
-    color: #999;
+    color: black;
 }
 
 a.info:visited {
@@ -468,10 +454,14 @@ p {
     font-weight: 900;
 }
 
+h12 {
+    font-size: 16px;
+    color: #999;
+    font-weight: 900;
+}
 
 
 /*-----------------------------------------------------------------------------------------------*/
-
 
 
 /* DROPDOWN MENU */
@@ -508,37 +498,36 @@ nav ul li:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-a.menu{
-     display: block;
+
+a.menu {
+    display: block;
     text-align: center;
     width: 100px;
     height: none;
     padding: 10px;
-     padding-top: 10px;
+    padding-top: 10px;
     /* remove that ugly underline and color */
     text-decoration: none;
-
 }
 
 
 /*-----------------------------------------------------------------------------------------------*/
 
+
 /*Container with 3 images*/
 
-.container{
+.container {
     /* starter width in pixels, divs display block by default*/
     width: 100%;
     display: inline-block;
     height: auto;
-   
     /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
 }
+
 .container-images-travel {
     /* starter width in pixels, divs display block by default*/
     width: 100%;
-   
     height: auto;
-    
     padding-left: 70px;
     /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
 }
@@ -547,7 +536,6 @@ a.menu{
     text-align: center;
     vertical-align: middle;
     display: table-cell;
-
     border: 0;
 }
 
@@ -740,9 +728,9 @@ font-style: normal; }
     width: 100%;
     position: relative;
     margin: 0;
-    padding:0;
+    padding: 0;
     display: inline-block;
-    height:500px;
+    height: 500px;
 }
 
 .mySlides {
@@ -821,7 +809,7 @@ font-style: normal; }
     border-radius: 50%;
     position: relative;
     transition: background-color 0.6s ease;
-     text-align: center;
+    text-align: center;
 }
 
 .active,
