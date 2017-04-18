@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Navbar</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class='container-fluid'>
+            <!-- Brand Logo and Links on the Left -->
+            <div class="navbar-header">
+                <!-- Brand and Toggle hamburger group -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseMenu" aria-expanded="false">
+                    <!--  draw the burger -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- this will style text or an image link as the logo/home link -->
+                <a class="navbar-brand">SomeLogo</a>
+                <p class="navbar-text">This is an awesome tagline</p>
+            </div>
+            <!-- Another set of navigation on the rigth  -->
+            <div class="collapse navbar-collapse" id="collapseMenu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"> Link 1</a></li>
+                    <li><a href="#"> Link 2</a></li>
+                    <li><a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Link 3 Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Drop Link 1</a></li>
+                            <li><a href="#">Drop Link 2</a></li>
+                            <li class="divider" role="separator"></li>
+                            <li><a href="#">Drop Link 3</a></li>
+                            <li><a href="#">Drop Link 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <!-- fixed navbar will cover the first 50px of our page, to make usre all of our content is seen lets add an inline style that adds some top padding to our first container  -->
+    <div class="container" style="padding-top:70px;">
+        <!--  Button to open our first modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#btnModal">OpenModal</button>
+        <pre>
+        An excellent book which explores the close relationship between Southwell and Shakespeare.
+        There are more verbal parallels, echoes and borrowings from Southwell by Shakespeare than 
+        from any other author, not excluding Holinshed and North (Plutarch). On the basis of John 
+        Klause's discoveries much of Shakespearean biography will have to be rewritten. I highly 
+        recommend this book to all those interested in Shakespeare's inner life.  <a href="#">strumpet</a>
+
+        </pre>
+        <!-- Modal (button opens this one) -->
+        <div class="modal fade" id="btnModal" tab-index="-1" role="dialog" aria-labelledby="btnModalLabel">
+            <!-- actual modal box -->
+            <div class="modal-dialog" role="document">
+                <!-- Modal content -->
+                <div class="model-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">X</button>
+                        <h4 class="modal-title" id="btnModalLabel">My first modal</h4>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <p>Are you sure ou want to delete or post?</p>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button class="btn">Cancel</button>
+                        <button class="btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="strumpetModal" tab-index="-1" role="dialog" aria-labelledby="strumpetModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">X</button>
+                        <h4 class="modal-title" id="btnModalLabel">My first modal</h4>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
