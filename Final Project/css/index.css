@@ -1,0 +1,677 @@
+/* transparent blue bg, and minimum height so we can keep track of our divs and semantic markup elements without having to add content. */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div,
+header,
+footer,
+section,
+aside,
+article,
+main {
+    /* RGBA color, red, green, blue (0-255) and alpha (0-1) */
+    background-color: white;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    /*#b295a8;*/
+    /*#dedede;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+div.wrapper {
+    width: 100%;
+    /* use margin 0 auto to center our wrapper div within the browser window */
+    margin: 0 auto;
+    /* add a little padding so we can see how child elements stack more clearly */
+    padding: 0px;
+    position: relative;
+    z-index: 101;
+    background-color: white;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/* My icons in the header and the footer */
+
+div {
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+div.header {
+    position: relative;
+}
+
+div.footer {
+    max-width: auto;
+    height: auto;
+    background-color: #006600;
+    position: relative;
+    text-align: center;
+    word-spacing: 1em;
+}
+
+div.copyright {
+    word-spacing: 0em;
+    float: left;
+    text-align: left;
+    padding: 20px 50px;
+}
+
+div.rights-reserved {
+    word-spacing: 0em;
+}
+
+div.icons-footer {
+    float: right;
+    display: inline-block;
+    z-index: 3;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    word-spacing: 1em;
+    padding: 20px;
+}
+
+.fa {
+    color: white;
+}
+
+.fa:hover {
+    transform: scale(1.5, 1.5);
+}
+
+header footer {
+    width: 100%;
+    background-color: white;
+}
+
+.icons.footer {
+    padding: 0px 13px;
+    word-spacing: 1em;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*  Navigation Bar Modified Styles */
+
+.navbar {
+    margin-bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 70px;
+    z-index: 100000000;
+    width: 100vw;
+    border: none;
+}
+
+.navbar-brand {
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    text-align: center;
+}
+
+.navbar-brand img {
+    width: 15%;
+    height: auto;
+    margin-top: -50px;
+    display: block;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-caption {
+    right: 5%;
+    top: 70%;
+    left: 70%;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    width: auto;
+}
+
+.dropdown-toggle {
+    width: auto;
+    z-index: 10000;
+}
+
+.dropdown-menu {
+    min-width: 100%;
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+.dropdown-menu>li>a {
+    padding: 7px 20px;
+    font-size: 15px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+}
+
+.dropdown-menu>li>a:hover {
+    width: auto;
+    padding: 20px;
+    display: block;
+    width: auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.slideshow-button {
+    padding: 5px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00b300;
+    text-decoration: none;
+    font-weight: 300;
+    vertical-align: middle;
+    text-color: white;
+    font-size: 20px;
+    /*Gradient*/
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+br.clear {
+    clear: both;
+    height: 0;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    /* for IE 6 */
+}
+
+.slideshow-button {
+    padding: 5px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00b300;
+    text-decoration: none;
+    font-weight: 300;
+    vertical-align: middle;
+    text-color: white;
+    font-size: 20px;
+    /*Gradient*/
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/* All styles for the links, buttons and lists */
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a.info:link {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* visited link */
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a.info:visited {
+    text-decoration: none;
+    color: #006600;
+    font-weight: 500;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* selected link */
+
+a:active {
+    text-decoration: none;
+    color: #b79567;
+}
+
+li.list-group-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+a {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    vertical-align: middle
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #d3b897;
+    text-decoration: none;
+    font-weight: 300;
+    vertical-align: middle;
+    z-index: 20;
+    text-color: white;
+    /*Gradient*/
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+a button {
+    font-size: 15px;
+    color: white;
+}
+
+.menu-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 300;
+    vertical-align: middle;
+    z-index: 20;
+    text-color: white;
+    /*Gradient*/
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+a.info {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 0px;
+    background-color: #b79567;
+    opacity: 0.5;
+    position: absolute;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+a.info:hover {
+    border: 2px solid black;
+    background-color: #b79567;
+    color: black;
+    opacity: 0.5;
+    position: absolute;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+button:hover {
+    /*Gradient*/
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+li a {
+    width: auto;
+}
+
+li {
+    display: block;
+    word-break: break-all;
+}
+
+@media (min-width: 768px) {
+    ul.nav li:hover > ul.dropdown-menu {
+        display: block;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/* All font styles */
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #006600;
+    font-weight: 300;
+}
+
+h1:hover {
+    color: black;
+}
+
+h2 {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    font-weight: 300;
+    text-shadow: 2px 2px black;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4 {
+    font-weight: 300;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+}
+
+h5:hover {
+    color: white;
+}
+
+h5:before,
+h5:after {
+    background: repeat-x 0 center;
+    background-color: #d3b897;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 100vw;
+    z-index: 1;
+}
+
+h5:before {
+    right: 114%;
+}
+
+h5:after {
+    left: 114%;
+}
+
+h6 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+h7 {
+    font-weight: 400;
+    float: right;
+}
+
+h8 {
+    font-size: 15px;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 15px;
+}
+
+h9 {
+    text-align: center;
+    color: #006600;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*Container with images and titles*/
+
+.container {
+    /* starter width in pixels, divs display block by default*/
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+}
+
+.col-sm-8 {
+    padding: 0px 20px;
+}
+
+.col-md-4.box {
+    padding: 60px 10px;
+}
+
+.container-title {
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.imagetitle {
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    top: 70%;
+    left: relative;
+    text-align: right;
+    padding: 20px;
+    height: 200px;
+    color: white;
+    opacity: 1;
+    transition: none;
+    position: absolute;
+    transition: all 1s ease;
+}
+
+.div_style {
+    width: 560px;
+    padding-bottom: 315px;
+}
+
+
+/*Aligning the text for the header*/
+
+.intro-header {
+    text-align: center;
+}
+
+
+/* Portfolio Hover Animation */
+
+.thumb {
+    position: relative;
+    /* when we scale our image on hover clip the overflow */
+    overflow: hidden;
+    width: 500px;
+}
+
+
+/*for all the text*/
+
+.mask {
+    padding-top: 0%;
+    width: 378px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 50%;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.mask p {
+    font-weight: 900;
+}
+
+a.info,
+button:hover,
+{
+    background-color: transparent;
+}
+
+.thumb:hover .mask {
+    opacity: 1;
+}
+
+
+/* initial values for our hidden items */
+
+.thumb .mask h2,
+.thumb .mask p,
+.thumb .mask a {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+}
+
+
+/* scale and make opaque on hover */
+
+.thumb:hover .mask h2,
+.thumb:hover .mask p,
+.thumb:hover .mask a {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* prepare some initial values for our image to change on hover */
+
+.thumb img {
+    transform: scale(0.3);
+    transform: rotate(0deg);
+    transition: all 1s ease;
+}
+
+.thumb:hover img {
+    transform: scale(1.5) rotate(0deg);
+}
+
+.thumb {
+    width: 300px;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*CONTACT sections */
+
+
+/*-----------------------------------------------------------------------------------------------*/
+ .container-contact{
+    padding: 40px 20px
+ }
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*FOOTER with slogan and video */
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+.panel-footer {
+    padding: 0;
+    margin: 0;
+    background-color: #006600;
+}
+
+.slogan {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.containe-video video {
+    margin: auto;
+    max-width: 100%;
+}
+
+div.target {
+    text-align: center;
+}

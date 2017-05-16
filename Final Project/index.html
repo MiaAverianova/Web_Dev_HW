@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Horses Helping People - HOPE</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <!-- Starting with the NAVIGATION BAR at the top -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Should not be changed -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand" href="#">
+                    <img class="img-responsive" src="img/logo.png">
+                </div>
+            </div>
+            <!-- Navigation links and bars-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- DROPDOWN MENU for every tab (ABOUT US bar)-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- List that drops down when clicking on a bar -->
+                            <li><a href="about.html">Who Are We?</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Horses</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Staff Directory</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Contact</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <!-- OUR PROGRAMS bar -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Programs<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- List that drops down when clicking on a bar -->
+                            <li><a href="programs.html">Current Programs</a></li>
+                        </ul>
+                    </li>
+                    <!-- CLIENT RIDER FORMS bar -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Client Rider Forms<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- List that drops down when clicking on a bar -->
+                            <li><a href="#">Adaptive Riding Packet</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Patient Packet</a></li>
+                        </ul>
+                    </li>
+                    <!-- VOLUNTEER bar -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Volunteers<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- List that drops down when clicking on a bar -->
+                            <li><a href="#">Volunteer Position</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Volunteer Application</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Volunteer Handbook</a></li>
+                        </ul>
+                    </li>
+                    <!-- HOW YOU CAN HELP bar -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How You Can Help<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- List that drops down when clicking on a bar -->
+                            <li><a href="#">ROSE- Belgian Draft Fundraiser</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="donate.html">Wish List</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="donate.html">Donate Now</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Capital Campaign</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Army of 10</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- CAROUSEL OF IMAGES behind the NAVIGATION BAR -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="10000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- ALL SLIDES -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/ljubljana.jpg" alt="...">
+                <div class="carousel-caption">
+                    All Our Recent Events
+                    <button class="slideshow-button">Learn More</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/celje.jpg" alt="...">
+                <div class="carousel-caption">
+                    Become a Volunteer
+                    <button class="slideshow-button">Learn More</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/maribor.jpg" alt="...">
+                <div class="carousel-caption">
+                    Come Ride with Us
+                    <button class="slideshow-button">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <!-- Controls - ARROWS back and next -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- Donate Now Button -->
+    <div class="container-title ">
+        <button> <a href="donate.html" name="About "><h5>DONATE NOW</h5></a></button>
+    </div>
+    <!--  3 containers with HOPE's recent news -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 box">
+                <img class="img-responsive" src="img/slide1.jpg" style="width: 100%;">
+                <h2>Join Us<br /></h2>
+                <h8>
+                    <a href="#">
+                        <button class="menu-button">Learn More</h8>
+                </button>
+                </a>
+            </div>
+            <div class="col-md-4 box">
+                <img class="img-responsive" src="img/slide2.jpg" style="width: 100%;">
+                <h2>Programs<br /></h2>
+                <h8>
+                    <a href="programs.html">
+                        <button class="menu-button">Learn More</h8>
+                </button>
+                </a>
+            </div>
+            <div class="col-md-4 box">
+                <img src="img/slide3.jpg" style="width: 100%;">
+                <h2>Volunteer<br/></h2>
+                <h8>
+                    <a href="#">
+                        <button class="menu-button">Learn More</h8>
+                </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--  2 columns: 1 for Upcoming Events and 1 for Gallery -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h3>HOPE - Horses Helping People</h3>
+                <h4>HOPE, a non-profit organization, was established in July 2000, to offer equine-assisted therapy to enrich the lives and experiences of individuals with disabilities.  We are not your typical therapy office.</h4>
+                <div class="col-sm-3 col-sm-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="img/img1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 col-sm-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="img/img2.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 col-sm-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="img/img3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 col-sm-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="img/img4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 col-sm-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="img/img5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-3 col-sm-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="img/img6.jpg" alt="">
+                    </a>
+                </div>
+                <a href="#">
+                    <h7>See Our Gallery</h7>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <h3>Upcoming Events</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h1>Operation Dinner Out Po Boy's Seafood and Grill.</h1>
+                        <h4>May 16th, 11 am - 9pm </h4></li>
+                    <li class="list-group-item">
+                        <h1>Summer Camp 2017: Horse Sense</h1>
+                        <h4>June 5th-9th, 9 pm - 12 pm </h4></li>
+                    <li class="list-group-item">
+                        <h1>Summer Camp 2017: A Hero's Journey with Horses - Group 1</h1>
+                        <h4>June 12th-16th, 9 pm - 12 pm </h4></li>
+                    <li class="list-group-item">
+                        <h1>Summer Camp 2017: A Hero's Journey with Horses - Group 2</h1>
+                        <h4>June 26th-30th, 9 pm - 12 pm </h4></li>
+                    <li class="list-group-item">
+                        <h1>Summer Camp 2017: Learning Social Skills on the Ranch</h1>
+                        <h4>June 19th-23th, 9 pm - 12 pm </h4></li>
+                </ul>
+                <a href="#">
+                    <h7>See All Events</h7>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--  "HOPE succeeds with your support" tab -->
+    <div class="slogan">
+        <h9>HOPE succeeds with your support</h9>
+    </div>
+    <!-- Position the video inside the container called "video" -->
+    <div class="container-video">
+        <div class="embed-responsive embed-responsive-16by9  div_style center-block">
+            <iframe src="https://player.vimeo.com/video/191681074?color=009900&portrait=0" frameborder="0"  height="306" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+    </div>
+        <section id="contact" class="content-section text-center">
+        <div class="contact-section">
+            <div class="container-contact">
+        <h3> Contact Us</h3>
+              <h4>Use this form to contact us with all your questions.</h4>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label for="exampleInputName2"><h1>Name</h1></label>
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="Rebecca Johnston">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail2"><h1>Email</h1></label>
+                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="rebecca.johnstone@example.com">
+                    </div>
+                    <div class="form-group ">
+                      <label for="exampleInputText"><h1>Your Message</h1></label>
+                     <textarea  class="form-control" placeholder="What do you want to know?"></textarea> 
+                    </div>
+                    <button class="slideshow-button" type="submit" >Send Message</button>
+                  </form>
+</div>
+</div>
+    <!-- SHOULD NOT BE CHANGED -->
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <br class="clear" />
+</body>
+</nav>
+</div>
+<!-- Footer with all the information about social media -->
+<footer>
+    <div class="panel panel-default">
+        <div class="panel-footer">
+            <div class="icons-footer ">
+                <a href="mailto:RIDINGTHERAPY@GMAIL.COM?Subject=Hi%20HOPE! " target="_top "><i class="fa fa-envelope-o " aria-hidden="true "></i></a>
+                <a target="_blank " href="https://www.instagram.com/hopehorseshelpingpeople/ "><i class="fa fa-instagram " aria-hidden="true "></i></a>
+                <a target="_blank " href="https://www.youtube.com/channel/UCoJ8xgaDLfYOUI5X-qTYddw"><i class="fa fa-youtube " aria-hidden="true "></i></a>
+                <a target="_blank " href="https://www.facebook.com/Almaricus"><i class="fa fa-facebook-square " aria-hidden="true "></i></a>
+                <a href="https://twitter.com/Horses4People "><i class="fa fa-twitter " aria-hidden="true "></i></a>
+                <div class="rights-reserved">
+                    <h6> Horses Helping People, All Rights Reserved 2017</h6>
+                </div>
+            </div>
+            <!-- Copyright inside the footer -->
+            <div class="copyright ">
+                <h6> HOPE, 9722 SOUTHWEST 153RD AVENUE, ARCHER, FL, 32618(352) 495-0533</h6>
+                <h6>www.horseshelpingpeople.org</h6>
+                <h6> Designed by Mia Averianova </h6>
+            </div>
+            <br class="clear " />
+        </div>
+    </div>
+</footer>
+
+
+
+
+</html>

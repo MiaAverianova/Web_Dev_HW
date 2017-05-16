@@ -1,0 +1,920 @@
+/* transparent blue bg, and minimum height so we can keep track of our divs and semantic markup elements without having to add content. */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div,
+header,
+footer,
+section,
+aside,
+article,
+main {
+   
+    /* RGBA color, red, green, blue (0-255) and alpha (0-1) */
+    background-color: white;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    /*#b295a8;*/
+    /*#dedede;*/
+    font-family: 'Roboto', sans-serif;
+
+}
+
+div.wrapper {
+    width: 100%;
+    /* use margin 0 auto to center our wrapper div within the browser window */
+    margin: 0 auto;
+    /* add a little padding so we can see how child elements stack more clearly */
+    padding: 0px;
+    position: relative;
+    z-index: 101;
+    background-color: white;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*HEADER and Navigation Bar */
+
+div {
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+
+
+
+div.copyright {
+    word-spacing: 0em;
+    float: left;
+    text-align: left;
+    padding: 20px 50px;
+
+}
+
+div.rights-reserved{
+    word-spacing: 0em;
+
+}
+div.icons-header {
+    display: inline-block;
+    z-index: 3;
+    text-align: right;
+    position: absolute;
+    top: 0px;
+    word-spacing: 1em;
+    padding: 20px;
+    right:35%;
+    background-color:white;
+}
+
+
+.fa {
+    color:  rgba(207, 192, 175, 0.7);
+}
+
+.fa:hover {
+    transform: scale(1.5, 1.5);
+}
+
+header footer {
+    width: 100%;
+    background-color: white;
+}
+
+
+
+    .header {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 200px;
+        background-color: rgba(207, 192, 175, 0.7);
+            position: relative;
+    }
+        .navbar {
+        margin-bottom: 0;
+        background: rgba(255, 255, 255, 0.9);
+        top: 50px;
+        width: 100vw;
+        border: none;
+    }
+        .navbar-brand {
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-brand img {
+        width: 15%;
+        height: auto;
+        margin-top: -50px;
+        display: block;
+    }
+
+        .navbar-default .navbar-nav>li>a {
+        color: black;
+    }
+    .dropdown-toggle {
+        width: auto;
+        z-index: 10000;
+    }
+
+        .navbar-default .navbar-nav>li>a:hover {
+        color: white;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    @media (min-width: 768px) {
+        ul.nav li:hover > ul.dropdown-menu {
+            display: block;
+        }
+    }
+    
+    #navbar {
+        text-align: center;
+    }
+
+
+    .dropdown-menu>li>a:hover {
+        width: auto;
+        padding: 20px;
+        display: block;
+        width: auto;
+    }
+    
+    .dropdown-menu>li>a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size:15px;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*  Carousel */
+
+
+
+
+.carousel-inner > .item > img {
+    width:100%;
+}
+
+
+
+br.clear {
+    clear: both;
+    height: 0;
+}
+
+.image {
+    height: 150px;
+    position: relative;
+}
+
+ul.firstlist {
+    /* remove the bullet points */
+    height: 100px;
+    background-color: white;
+    padding: 0px 0px;
+    margin: 0;
+    float: right;
+    z-index: 10;
+    text-align: center;
+}
+
+
+
+ul.title {
+    width: 300px;
+    /* Stay in place */
+    z-index: 2;
+    position: relative;
+}
+
+span.dot {
+    color: #999;
+    cursor: default;
+    float: right;
+    z-index: 100;
+}
+
+.dot:hover {
+    color: black;
+    float: right;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/* All styles for the links */
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a.info:link {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* visited link */
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a.info:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    text-decoration: none;
+    color: #b79567;
+}
+
+
+/* selected link */
+
+a:active {
+    text-decoration: none;
+    color: #b79567;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #d3b897;
+    text-decoration: none;
+    font-weight: 300;
+    vertical-align: middle;
+    z-index: 20;
+    text-color: white;
+    /*Gradient*/
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+
+}
+
+.menu-button{
+    padding:10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #008000;
+    text-decoration: none;
+    font-weight: 300;
+    vertical-align: middle;
+    z-index: 20;
+    text-color: white;
+    /*Gradient*/
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+
+}
+
+a.info {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 0px;
+    background-color: #b79567;
+    opacity: 0.5;
+    position: absolute;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+a.info:hover {
+    border: 2px solid black;
+    background-color: #b79567;
+    color: black;
+    opacity: 0.5;
+    position: absolute;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+
+button:hover {
+  
+
+  
+  /*Gradient*/
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+
+}
+
+   
+
+    
+    li a {
+        width: auto;
+    }
+    
+
+    
+    li {
+        display: block;
+        word-break: break-all;
+    }
+
+
+    
+    li.list-group-item:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        display: block;
+    }
+    
+
+    
+    a {
+        color: #006600;
+        text-align: center;
+        font-weight: 300;
+        font-size: 20px;
+        vertical-align: middle
+    }
+    
+    a:visited {
+        color: #006600;
+        font-weight: 500;
+    }
+    
+    a:hover {
+        color: black;
+    }
+
+        span {
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    span:before,
+    span:after {
+        background-color: rgba(207, 192, 175, 0.7);
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    
+    span:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    
+    span:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/* All font styles */
+
+
+/*-----------------------------------------------------------------------------------------------*/
+    h1 {
+        font-size: 20px;
+        color: black;
+        font-weight: 400;
+    }
+    
+    h2 {
+        font-size: 15px;
+        color: black;
+        font-weight: 300;
+        text-align: left;
+        line-height:25px;
+    }
+    
+    h3 {
+        font-size: 15px;
+        color: grey;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    h3:hover {
+        color: black;
+        font-size: 20px;
+    }
+
+        h4 {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+h5 {
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        padding: 0 15px;
+        position: relative;
+        font-size: 20px;
+        color: white;
+        font-weight: 300;
+    }
+    
+    h5:hover {
+        color: white;
+    }
+    
+    h5:before,
+    h5:after {
+        background: repeat-x 0 center;
+        background-color: #d3b897;
+        content: "";
+        display: block;
+        height: 1px;
+        position: absolute;
+        width: 100vw;
+        z-index: 1;
+    }
+    
+    h5:before {
+        right: 114%;
+    }
+    
+    h5:after {
+        left: 114%;
+    }
+    
+    h6 {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    h7 {
+               font-weight: 400;
+        color: #006600;
+        font-size: 20px;
+    }
+
+    h8 {
+        font-size: 15px;
+        position: absolute;
+        top: 250px;
+        left: 0;
+        width: 100%;
+        color: white;
+        padding: 15px;
+    }
+
+      h9 {
+        text-align: center;
+        color: black;
+        font-weight: 600;
+        font-size: 20px;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*Container with 3 images*/
+
+.container {
+    /* starter width in pixels, divs display block by default*/
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+}
+
+.container-images {
+    /* starter width in pixels, divs display block by default*/
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
+    /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+}
+
+.container-images2 {
+    /* starter width in pixels, divs display block by default*/
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    background-color: #b79567;
+    /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+}
+
+.container-images3 {
+    /* starter width in pixels, divs display block by default*/
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    /*padding ads to the width dimension of our element. our 900px container now takes up 940 px of the screen */
+}
+
+.imagetitle {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    top: 30%;
+    left: relative;
+    text-align: center;
+    padding: 2%;
+    height: 200px;
+    opacity: 1;
+    transition: none;
+    position: absolute;
+    z-index: 100;
+    transition: all 1s ease;
+}
+
+.container-title {
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.container-title2 {
+    overflow: hidden;
+    padding-left: 80px;
+    background-color: #b79567;
+}
+
+.img-ljubljana {
+    padding-top: 20px;
+    padding-top: 20px;
+}
+
+.img-maribor {
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.img-bled {
+    padding-right: 30px;
+}
+
+.img-celje {
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+#container-images .image-container {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    border: 0;
+}
+
+#container-images .image-container img {
+    max-width: 10px;
+    max-height: 60px;
+}
+
+
+/*Aligning the text for the header*/
+
+.intro-header {
+    text-align: center;
+}
+
+
+/*
+Responsive 996px grid system ~ Style CSS.
+Copyright 2013, Josh Cope
+*/
+
+
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+
+
+/* Jumbotron/Hero Styles */
+
+div.hero {
+    width: 100vw;
+    /* height: 100vh; */
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.hero article {
+    position: absolute;
+    width: 50%;
+    top: 60%;
+    right: 0%;
+    padding: 2%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0000+0,0000ff+100&0.5+0,0.3+100 */
+    background: -moz-linear-gradient(left, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.3) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.3) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.3) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#80ff0000', endColorstr='#4d0000ff', GradientType=1);
+    /* IE6-9 */
+}
+
+
+/* COLUMNS AND THUMB  */
+
+
+.thumb {
+    position: relative;
+    /* when we scale our image on hover clip the overflow */
+    overflow: hidden;
+    width: 500px;
+}
+
+.thumb2 {
+    position: relative;
+    /* when we scale our image on hover clip the overflow */
+    overflow: hidden;
+    width: 700px;
+}
+
+.thumb3 {
+    position: relative;
+    /* when we scale our image on hover clip the overflow */
+    overflow: hidden;
+    width: 700px;
+    height: auto;
+}
+
+
+/*for all the text*/
+
+.mask {
+    padding-top: 0%;
+    width: 378px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 50%;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.mask p {
+    font-weight: 900;
+}
+
+a.info,
+button:hover,
+{
+    background-color: transparent;
+}
+
+.thumb:hover .mask {
+    opacity: 1;
+}
+
+
+/* initial values for our hidden items */
+
+.thumb .mask h2,
+.thumb .mask p,
+.thumb .mask a {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+}
+
+
+/* scale and make opaque on hover */
+
+.thumb:hover .mask h2,
+.thumb:hover .mask p,
+.thumb:hover .mask a {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* prepare some initial values for our image to change on hover */
+
+.thumb img {
+    transform: scale(0.3);
+    transform: rotate(0deg);
+    transition: all 1s ease;
+}
+
+.thumb:hover img {
+    transform: scale(1.5) rotate(0deg);
+}
+
+.col-md-8 {
+        padding: 10px 40px;
+          text-align: center;
+    }
+    
+
+    .col-md-4.box {
+  
+              padding: 20px 30px;
+        height: 100vh;
+    }
+    
+    .div_style {
+        width: 560px;
+        padding-bottom: 315px;
+    }
+    
+
+    
+    div.target {
+        text-align: center;
+    }
+    
+
+
+ 
+    
+  
+    
+    .slogan {
+        text-align: center;
+        padding: 10px 10px;
+    }
+    
+
+    
+
+    
+    .thumbnail {
+        border: none;
+    }
+    
+    .thumbnail:hover {
+        background-color: rgba(207, 192, 175, 0.7);
+        color: white;
+        transform: scale(1.1, 1.1);
+    }
+    
+    .OverlayText {
+        background-color: rgba(255, 255, 255, 0.6);
+        bottom: 20%;
+        color: #fff;
+        opacity: 0.7;
+        position: absolute;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .application {
+        padding: 20px;
+        width: 100%;
+        top: 70px;
+        text-align: center;
+    }
+
+
+    
+    .list-group-item {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+
+    
+
+    
+    .thumb {
+        width: 300px;
+        padding: 20px;
+    }
+    
+   
+    
+
+    
+    /* IMAGE RELATED STYLES */
+   img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+        .image {
+        position: relative;
+        width: 100%;
+        /* for IE 6 */
+    }
+        .imagetitle {
+        box-sizing: border-box;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        top: 70%;
+        left: relative;
+        text-align: right;
+        padding: 20px;
+        height: 200px;
+        color: white;
+        opacity: 1;
+        transition: none;
+        position: absolute;
+        transition: all 1s ease;
+    }
+    
+    .grow img {
+        width: 70%;
+        height: auto;
+        vertical-align: bottom;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .grow img:hover {
+        width: 100%;
+    }
+
+/*FOOTER*/
+
+
+
+div.footer {
+    max-width: auto;
+    height: auto;
+    background-color:#006600;
+    position: relative;
+    text-align: center;
+    word-spacing: 1em;
+}
+
+div.icons-footer {
+    display: inline-block;
+    z-index: 3;
+    text-align: right;
+    position: absolute;
+    top: 0px;
+    word-spacing: 1em;
+    padding: 20px;
+    right:0;
+}
+
+
+.icons.footer {
+    padding: 0px 13px;
+    word-spacing: 1em;
+}
+    
+    .panel-footer {
+        padding: 0;
+        margin: 0;
+        background-color: #006600;
+    }
+    
+
+
+
+
+
+
